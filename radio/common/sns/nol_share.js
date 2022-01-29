@@ -94,7 +94,7 @@ var NHKSNS = function () {
     function i(e, t) {
         var n = '<li class="nhksns-{name}"><a href="{href}" {sendMetrics} target="_blank"><img  src="{img}" alt="{name}"></img></a>',
             i = w.SNS.resources[e];
-            console.log(i);
+
         switch (e) {
             case "twitter":
                 return h(n, {
@@ -217,7 +217,7 @@ var NHKSNS = function () {
             c = decodeURIComponent(location.search),
             u = decodeURIComponent(location.hash),
             p = s + "//" + l + a;
-            console.log(s);
+
         if (!(s && l && a)) 
             return w.defaultUrl;
         
@@ -272,7 +272,7 @@ var NHKSNS = function () {
             e(t)
         })
     }
-console.log("a");
+
     var b,
         k = ".nhk-snsbtn { margin-bottom: 15px; } ul.nhksns { list-style:none; display: inline; padding-left: 0; } ul.nhksns > li { display: inline-block; vertical-align: middle; margin: 0.2em; } .nhksns-icon-s img { width:24px; } .nhksns-icon-m img { width: 32px; } .nhksns-icon-l img { width:40px; } .nhksns-help img { margin-left:6px; width: 18px; border: 1px solid #999; vertical-align: middle; }  img { border: none; } .nhksns-guide { vertical-align:middle; margin: 0 0 6px 0; font-weight: bold; } .nhksns img { border: none; }",
         w = {};

@@ -5,7 +5,7 @@ function _rrCallback3() {
         url: "https://www.nhk.or.jp/radio/include/footer.html",
         dataType: "html",
         success: function (a) {
-            console.log("j")
+            console.log(a)
             $("#_rrfooter").append(a)
         },
         error: function () {

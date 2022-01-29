@@ -39,7 +39,7 @@ a { color:#262626; text-decoration:none; -webkit-transition:all 0.2s; transition
 #contentsHead header { width:100%; height:55px; background:#fff; position:relative;}
 #contentsHead h1 {
 	width:113px; height:40px;
-	background:url(../radio/img/parts.png) no-repeat 0 -280px;
+	background:url(../img/parts.png) no-repeat 0 -280px;
 	background-size:200px auto;
 	position:absolute; top:9px; left:14px;
 	}
@@ -58,13 +58,13 @@ a { color:#262626; text-decoration:none; -webkit-transition:all 0.2s; transition
 	}
 	#globalnav .mOpen:before {
 		content:""; display:block; width:30px; height:23px;
-		background:url(../radio/img/parts.png) no-repeat -66px -40px;
+		background:url(../img/parts.png) no-repeat -66px -40px;
 		background-size:200px auto;
 		position:absolute; top:9px; left:9px;
 	}
 	#globalnav .mOpen:after {
 		content:""; display:block; width:35px; height:10px;
-		background:url(../radio/img/parts.png) no-repeat -230px -473px;
+		background:url(../img/parts.png) no-repeat -230px -473px;
 		background-size:300px auto;
 		position:absolute; top:39px; left:50%;
 		-webkit-transform:translate(-50%, 0); transform:translate(-50%, 0);
@@ -103,7 +103,7 @@ a { color:#262626; text-decoration:none; -webkit-transition:all 0.2s; transition
 	/*上3つ*/
 	#globalnav .mCover .nav2-1 li a:before {
 		content:""; display:block; width:53px; height:36px;
-		background:url(../radio/img/parts.png) no-repeat 0 -66px;
+		background:url(../img/parts.png) no-repeat 0 -66px;
 		background-size:200px auto;
 		margin:0 auto 16px;
 		transform:scale(0.9);
@@ -126,7 +126,7 @@ a { color:#262626; text-decoration:none; -webkit-transition:all 0.2s; transition
 	#globalnav .nav2-3 li.m10 > a { right:50px;}
 	#globalnav .nav2-3 li > a:before {
 		content:""; display:block; width:30px; height:24px;
-		background:url(../radio/img/parts.png) no-repeat;
+		background:url(../img/parts.png) no-repeat;
 		background-size:200px auto;
 		position:absolute; top:9px; left:50%;
 		-webkit-transform:translate(-50%, 0); transform:translate(-50%, 0);
@@ -135,7 +135,7 @@ a { color:#262626; text-decoration:none; -webkit-transition:all 0.2s; transition
 	#globalnav .nav2-3 li.m10 > a:before { background-position:-33px -40px;}
 	#globalnav .nav2-3 a:after {
 		content:""; display:block; width:50px; height:10px;
-		background:url(../radio/img/parts.png) no-repeat;
+		background:url(../img/parts.png) no-repeat;
 		background-size:300px auto;
 		position:absolute; top:39px; left:50%;
 		-webkit-transform:translate(-50%, 0); transform:translate(-50%, 0);
@@ -192,7 +192,7 @@ a { color:#262626; text-decoration:none; -webkit-transition:all 0.2s; transition
 footer .f1 { background:#f4f0f1; padding:15px 0 12px;}
 	footer .f1 h1 {
 		width:113px; height:40px;
-		background:url(../radio/img/parts.png) no-repeat 0 -280px;
+		background:url(../img/parts.png) no-repeat 0 -280px;
 		background-size:200px auto;
 		margin:0 auto;
 	}
@@ -228,7 +228,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 16px 20px;}
 	}
 	#ptop a:before {
 		content:""; display:block; width:26px; height:20px;
-		background:url(../radio/img/parts.png) no-repeat -163px -46px;
+		background:url(../img/parts.png) no-repeat -163px -46px;
 		background-size:200px auto;
 		position:absolute; top:50%; left:50%;
 		margin:-10px 0 0 -13px;
@@ -254,7 +254,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 16px 20px;}
 	.btn a span { display:inline-block; position:relative;}
 	.btn a span:after {
 		content:''; display:block; width:20px; height:20px;
-		background:url(../radio/img/parts.png) no-repeat -25px -30px;
+		background:url(../img/parts.png) no-repeat -25px -30px;
 		background-size:300px auto;
 		position:absolute; top:50%; right:-30px;
 		margin-top:-11px;
@@ -336,7 +336,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 16px 20px;}
 	}
 	.idx #selectRadio .title .channel {
 		display:block; width:50px; height:50px;
-		background:url(../radio/img/parts.png) no-repeat;
+		background:url(../img/parts.png) no-repeat;
 		background-size:170px auto;
 		text-indent:110%; white-space:nowrap; overflow:hidden;
 		margin:-20px 0 5px -9px;
@@ -371,7 +371,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 16px 20px;}
 	}
 	.idx #spOndemand a span:after {
 		content:''; display:inline-block; width:13px; height:13px;
-		background:url(../radio/img/parts.png) no-repeat 0 -20px;
+		background:url(../img/parts.png) no-repeat 0 -20px;
 		background-size:200px auto;
 		position:absolute; top:46px; right:-8px;
 	}
@@ -397,7 +397,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 16px 20px;}
 	.idx #snsArea .radirutweet .note { text-align:right; color:#8d8d8d; padding:3px 5px 0 0;}
 .idx #snsArea .radiru {
 	width:54px; height:54px;
-	background:url(../radio/img/parts.png) no-repeat -107px -50px;
+	background:url(../img/parts.png) no-repeat -107px -50px;
 	background-size:200px auto;
 	position:absolute; top:0; left:0;
 }
@@ -530,7 +530,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 16px 20px;}
 	.idx #ondemand .headings h2 a:hover { opacity:0.7;}
 	.idx #ondemand .headings h2 a:after {
 		content:''; display:block; width:20px; height:20px;
-		background:url(../radio/img/parts.png) no-repeat 0 -30px;
+		background:url(../img/parts.png) no-repeat 0 -30px;
 		background-size:300px auto;
 		position:absolute; top:50%; right:-20px;
 		margin-top:-12px;
@@ -587,7 +587,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 16px 20px;}
 	.idx #info2 .text ul li.hide { display:none;}
 	.idx #info2 .text ul li:before {
 		content:''; display:block; width:17px; height:17px;
-		background:url(../radio/img/parts.png) no-repeat -53px 0;
+		background:url(../img/parts.png) no-repeat -53px 0;
 		background-size:200px auto;
 		position:absolute; top:25px; left:10px;
 		margin-top:-13px;
@@ -622,7 +622,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 16px 20px;}
 	}
 	.idx #others .list li a:after {
 		content:''; display:block; width:13px; height:13px;
-		background:url(../radio/img/parts.png) no-repeat 0 -20px;
+		background:url(../img/parts.png) no-repeat 0 -20px;
 		background-size:200px auto;
 		position:absolute; top:18px; left:20px;
 		opacity:0.4;
@@ -639,7 +639,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 16px 20px;}
 #main .headings { background:#fff; border-bottom:3px solid #df1825; position:relative;}
 	#main .headings:before {
 		content:''; display:block; width:60px; height:53px;
-		background:url(../radio/img/parts.png) no-repeat -126px -106px;
+		background:url(../img/parts.png) no-repeat -126px -106px;
 		background-size:200px auto;
 		position:absolute; top:-3px; left:5px;
 		z-index:10;
@@ -662,7 +662,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 16px 20px;}
 	}
 	#main .headings > h2 span:before {
 		content:''; display:block; width:23px; height:23px;
-		background:url(../radio/img/parts.png) no-repeat -73px 0;
+		background:url(../img/parts.png) no-repeat -73px 0;
 		background-size:200px auto;
 		position:absolute; top:50%; left:70px;
 		margin-top:-12px;
@@ -832,7 +832,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 16px 20px;}
 	#progList li .linkbtn .link2 span { background:#c81621; padding:9px 10px 0 0;}
 	#progList li .linkbtn .link2 span:after {
 		content:''; display:block; width:17px; height:17px;
-		background:url(../radio/img/parts.png) no-repeat -50px -20px;
+		background:url(../img/parts.png) no-repeat -50px -20px;
 		background-size:200px auto;
 		position:absolute; top:50%; right:5px;
 		margin-top:-8.5px;
@@ -841,7 +841,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 16px 20px;}
 /*special
 #progList li.special:after {
 	content:''; display:block; width:44px; height:44px;
-	background:url(../radio/img/parts.png) no-repeat -153px 0;
+	background:url(../img/parts.png) no-repeat -153px 0;
 	background-size:200px auto;
 	position:absolute; top:6px; left:6px; z-index:10;
 }*/
@@ -1021,7 +1021,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 16px 20px;}
 	}
 	#app .download li h3:before {
 		content:""; display:block; width:60px; height:60px;
-		background:url(../radio/img/parts.png) no-repeat 0 -106px;
+		background:url(../img/parts.png) no-repeat 0 -106px;
 		background-size:200px auto;
 		position:absolute; top:0; left:0;
 	}
@@ -1064,7 +1064,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 16px 20px;}
 	#about .block2 .attn { padding-left:25px; position:relative;}
 	#about .block2 .attn:before {
 		content:""; display:block; width:17px; height:17px;
-		background:url(../radio/img/parts.png) no-repeat -110px -40px;
+		background:url(../img/parts.png) no-repeat -110px -40px;
 		background-size:300px auto;
 		position:absolute; top:5px; left:0;
 	}
@@ -1280,7 +1280,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 16px 20px;}
 	}
 	.hensei #main .headings .reload a:after {
 		content:""; display:block; width:30px; height:30px;
-		background:url(../radio/img/parts.png) no-repeat -245px -105px;
+		background:url(../img/parts.png) no-repeat -245px -105px;
 		background-size:300px auto;
 		position:absolute; top:50%; left:50%;
 		margin:-15px 0 0 -15px;
@@ -1330,7 +1330,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 16px 20px;}
 	#timeTableMain .fm h3 { background:#f18e2b; left:67%; padding-top:9px;}
 	#timeTableMain h3:before {
 		content:""; display:block; width:34px; height:34px;
-		background:url(../radio/img/parts.png) no-repeat;
+		background:url(../img/parts.png) no-repeat;
 		background-size:200px auto;
 		position:absolute; top:3px; left:4px;
 	}
@@ -1352,7 +1352,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 16px 20px;}
 		#timeTableMain .listen a:after {
 			content:''; display:inline-block;
 			width:33px; height:33px; vertical-align:middle;
-			background:url(../radio/img/parts.png) no-repeat -104px -404px;
+			background:url(../img/parts.png) no-repeat -104px -404px;
 			background-size:250px auto;
 			margin:-5px 0 0 5px;
 		}
@@ -1638,7 +1638,7 @@ br.sp2 { display:none;}
 .idx #globalnav .mCover .nav2-1 li.m12-1 a:before,
 .idx #globalnav .mCover .nav2-1 li.m12-2 a:before {
 	content:""; display:block; width:45px; height:35px;
-	background:url(../radio/img/parts.png) no-repeat -170px -485px;
+	background:url(../img/parts.png) no-repeat -170px -485px;
 	background-size:300px auto;
 	margin:0 auto 16px; position:static;
 	-webkit-transform:translate(0, 0);
@@ -1694,7 +1694,7 @@ br.sp2 { display:none;}
 	.idx #selectRadio .fm .channel { background:#f18e2b;}
 	.idx #selectRadio .channel:before {
 		content:''; display:block; width:105px; height:80px;
-		background:url(../radio/img/parts.png) no-repeat;
+		background:url(../img/parts.png) no-repeat;
 		background-size:300px auto;
 		position:absolute; top:-20px; right:-25px;
 		-webkit-transform:scale(0.55); transform:scale(0.55);
@@ -1835,7 +1835,7 @@ br.sp2 { display:none;}
 	}
 	.top-section .headings .more a:after {
 		content:''; display:inline-block; width:20px; height:20px;
-		background:url(../radio/img/parts.png) no-repeat 0 -30px;
+		background:url(../img/parts.png) no-repeat 0 -30px;
 		background-size:300px auto;
 		vertical-align:middle; margin:-2px 0 0 0;
 		-webkit-transform:scale(0.7); transform:scale(0.7);
@@ -1953,7 +1953,7 @@ br.sp2 { display:none;}
 @media screen and (max-width:350px){
 	.idx #contentsHead h1 {
 		width:180px; height:25px;
-		background:url(../radio/img/parts.png) no-repeat -110px -615px;
+		background:url(../img/parts.png) no-repeat -110px -615px;
 		background-size:300px auto;
 		position:absolute; top:6px; left:6px;
 		-webkit-transform:scale(0.8); transform:scale(0.8);

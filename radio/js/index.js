@@ -15,7 +15,7 @@ $(function () {
         cache: !0,
         dataType: "xml",
         success: function (e) {
-            console.log("g");
+
             $config.info = $(e)
                 .find("info")
                 .eq(0)
@@ -136,10 +136,9 @@ var $area,
             cache: !0,
             dataType: "html",
             success: function (e) {
-                console.log(info2path)
                 $info2 = e,
                 info2()
-            
+           
             },
             error: function () {
                 console.log("err");

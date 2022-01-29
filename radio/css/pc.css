@@ -49,7 +49,7 @@ a { color:#262626; text-decoration:none; -webkit-transition:all 0.2s; transition
 #contentsHead { width:100%; height:115px; background:#fff; position:relative;}
 	#contentsHead h1 {
 		width:170px; height:60px;
-		background:url(../radio/img/parts.png) no-repeat 0 -420px;
+		background:url(../img/parts.png) no-repeat 0 -420px;
 		background-size:300px auto;
 		position:absolute; top:27px; left:18px;
 	}
@@ -73,7 +73,7 @@ a { color:#262626; text-decoration:none; -webkit-transition:all 0.2s; transition
 	}
 	#globalnav .nav1-1 > li > a:before {
 		content:""; display:block; width:35px; height:25px;
-		background:url(../radio/img/parts.png) no-repeat;
+		background:url(../img/parts.png) no-repeat;
 		background-size:300px auto;
 		position:absolute; top:50%; left:22px;
 		margin-top:-12.5px;
@@ -244,7 +244,7 @@ a { color:#262626; text-decoration:none; -webkit-transition:all 0.2s; transition
 footer .f1 { background:#f4f0f1; padding:15px 0;}
 	footer .f1 h1 {
 		width:170px; height:60px;
-		background:url(../radio/img/parts.png) no-repeat 0 -420px;
+		background:url(../img/parts.png) no-repeat 0 -420px;
 		background-size:300px auto;
 		margin:0 auto;
 	}
@@ -281,7 +281,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 0 20px;}
 	}
 	#ptop a:before {
 		content:""; display:block; width:40px; height:30px;
-		background:url(../radio/img/parts.png) no-repeat -245px -70px;
+		background:url(../img/parts.png) no-repeat -245px -70px;
 		background-size:300px auto;
 		position:absolute; top:50%; left:50%;
 		margin:-15px 0 0 -20px;
@@ -309,7 +309,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 0 20px;}
 	.btn a span { display:inline-block; position:relative;}
 	.btn a span:after {
 		content:''; display:block; width:20px; height:20px;
-		background:url(../radio/img/parts.png) no-repeat -25px -30px;
+		background:url(../img/parts.png) no-repeat -25px -30px;
 		background-size:300px auto;
 		position:absolute; top:50%; right:-30px;
 		margin-top:-10px;
@@ -402,7 +402,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 0 20px;}
 	.idx #selectRadio .title .time { font-size:120%; position:absolute; top:14px; left:98px; opacity:0.7;}
 	.idx #selectRadio .title .channel {
 		display:block; width:90px; height:90px;
-		background:url(../radio/img/parts.png) no-repeat;
+		background:url(../img/parts.png) no-repeat;
 		background-size:300px auto;
 		text-indent:110%; white-space:nowrap; overflow:hidden;
 		position:absolute; top:-12px; left:4px;
@@ -420,7 +420,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 0 20px;}
 		}
 		.idx #selectRadio .title .listen:after {
 			content:''; display:block; width:26px; height:26px;
-			background:url(../radio/img/parts.png) no-repeat -75px -30px;
+			background:url(../img/parts.png) no-repeat -75px -30px;
 			background-size:300px auto;
 			position:absolute; top:50%; right:18px;
 			margin-top:-13px;
@@ -452,7 +452,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 0 20px;}
 	}
 	.idx #radioOndemand a:after {
 		content:''; display:block; width:35px; height:35px;
-		background:url(../radio/img/parts.png) no-repeat -110px 0;
+		background:url(../img/parts.png) no-repeat -110px 0;
 		background-size:300px auto;
 		position:absolute; top:50%; right:20px;
 		margin-top:-17.5px;
@@ -460,13 +460,13 @@ footer .f2 { background:#333; text-align:center; padding:30px 0 20px;}
 	.idx #radioOndemand a span { display:inline-block; height:63px; padding-top:19px; position:relative;}
 	.idx #radioOndemand a span:before {
 		content:''; display:block; width:90px; height:80px;
-		background:url(../radio/img/parts.png) no-repeat -95px -160px;
+		background:url(../img/parts.png) no-repeat -95px -160px;
 		background-size:300px auto;
 		position:absolute; top:-10px; left:-120px;
 	}
 	.idx #radioOndemand a span:after {
 		content:''; display:inline-block; width:20px; height:20px;
-		background:url(../radio/img/parts.png) no-repeat 0 -30px;
+		background:url(../img/parts.png) no-repeat 0 -30px;
 		background-size:300px auto;
 		position:absolute; top:50%; right:-35px;
 		margin-top:-9px;
@@ -642,7 +642,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 0 20px;}
 	.idx #ondemand .headings h2 a:hover { opacity:0.7;}
 	.idx #ondemand .headings h2 a:after {
 		content:''; display:block; width:20px; height:20px;
-		background:url(../radio/img/parts.png) no-repeat 0 -30px;
+		background:url(../img/parts.png) no-repeat 0 -30px;
 		background-size:300px auto;
 		position:absolute; top:50%; right:-30px;
 		margin-top:-11px;
@@ -701,7 +701,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 0 20px;}
 	.idx #info2 .text ul li.hide { display:none;}
 	.idx #info2 .text ul li:before {
 		content:''; display:block; width:26px; height:26px;
-		background:url(../radio/img/parts.png) no-repeat -80px 0;
+		background:url(../img/parts.png) no-repeat -80px 0;
 		background-size:300px auto;
 		position:absolute; top:10px; left:-3px;
 		margin-top:-13px;
@@ -740,7 +740,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 0 20px;}
 	}
 	.idx #others .list li a:after {
 		content:''; display:block; width:20px; height:20px;
-		background:url(../radio/img/parts.png) no-repeat 0 -30px;
+		background:url(../img/parts.png) no-repeat 0 -30px;
 		background-size:300px auto;
 		position:absolute; top:16px; left:7px;
 		opacity:0.4;
@@ -755,7 +755,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 0 20px;}
 #main .headings { background:#fff; border-bottom:3px solid #df1825; position:relative;}
 	#main .headings:before {
 		content:''; display:block; width:90px; height:80px;
-		background:url(../radio/img/parts.png) no-repeat -190px -160px;
+		background:url(../img/parts.png) no-repeat -190px -160px;
 		background-size:300px auto;
 		position:absolute; top:-9px; left:50%;
 		margin-left:-490px; z-index:10;
@@ -774,7 +774,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 0 20px;}
 	#main .headings > h2 span { display:block; height:63px; padding:19px 0 0 170px; position:relative;}
 	#main .headings > h2 span:before {
 		content:''; display:block; width:35px; height:35px;
-		background:url(../radio/img/parts.png) no-repeat -110px 0;
+		background:url(../img/parts.png) no-repeat -110px 0;
 		background-size:300px auto;
 		position:absolute; top:50%; left:115px;
 		margin-top:-17.5px;
@@ -982,7 +982,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 0 20px;}
 	#progList li .linkbtn .link2 span { background:#c81621; padding-right:23px; line-height:39px;}
 	#progList li .linkbtn .link2 span:after {
 		content:''; display:block; width:26px; height:26px;
-		background:url(../radio/img/parts.png) no-repeat -75px -30px;
+		background:url(../img/parts.png) no-repeat -75px -30px;
 		background-size:300px auto;
 		position:absolute; top:50%; right:5px;
 		margin-top:-13.5px;
@@ -991,7 +991,7 @@ footer .f2 { background:#333; text-align:center; padding:30px 0 20px;}
 /*special
 #progList li.special:after {
 	content:''; display:block; width:67px; height:67px;
-	background:url(../radio/img/parts.png) no-repeat -230px 0;
+	background:url(../img/parts.png) no-repeat -230px 0;
 	background-size:300px auto;
 	position:absolute; top:-4px; left:-4px;
 }*/
@@ -1210,7 +1210,7 @@ body:not(.detail) #ondemandList { min-height:500px; position:relative;}
 	}
 	#app .download li h3:before {
 		content:""; display:block; width:90px; height:90px;
-		background:url(../radio/img/parts.png) no-repeat 0 -160px;
+		background:url(../img/parts.png) no-repeat 0 -160px;
 		background-size:300px auto;
 		position:absolute; top:0; left:0;
 	}
@@ -1246,7 +1246,7 @@ body:not(.detail) #ondemandList { min-height:500px; position:relative;}
 	#about .block2 .attn { padding-left:25px; position:relative;}
 	#about .block2 .attn:before {
 		content:""; display:block; width:17px; height:17px;
-		background:url(../radio/img/parts.png) no-repeat -110px -40px;
+		background:url(../img/parts.png) no-repeat -110px -40px;
 		background-size:300px;
 		position:absolute; top:5px; left:0;
 	}
@@ -1452,7 +1452,7 @@ body:not(.detail) #ondemandList { min-height:500px; position:relative;}
 	.hensei #main .headings > h2 .inner { height:100%; padding:19px 16px 0 80px;}
 	.hensei #main .headings > h2 .inner:before {
 		content:""; display:block; width:53px; height:36px;
-		background:url(../radio/img/parts.png) no-repeat 0 -66px;
+		background:url(../img/parts.png) no-repeat 0 -66px;
 		background-size:200px auto;
 		position:absolute; top:50%; left:12px;
 		margin-top:-19px;
@@ -1471,7 +1471,7 @@ body:not(.detail) #ondemandList { min-height:500px; position:relative;}
 	}
 	.hensei #main .headings .reload a:after {
 		content:""; display:block; width:30px; height:30px;
-		background:url(../radio/img/parts.png) no-repeat -245px -105px;
+		background:url(../img/parts.png) no-repeat -245px -105px;
 		background-size:300px auto;
 		position:absolute; top:50%; left:50%;
 		margin:-15px 0 0 -15px;
@@ -1524,7 +1524,7 @@ body:not(.detail) #ondemandList { min-height:500px; position:relative;}
 	#timeTableMain .fm h3 { background:#f18e2b;}
 	#timeTableMain h3:before {
 		content:""; display:block; width:65px; height:65px;
-		background:url(../radio/img/parts.png) no-repeat;
+		background:url(../img/parts.png) no-repeat;
 		background-size:300px auto;
 		position:absolute; top:-14px; left:5px;
 	}
@@ -1544,7 +1544,7 @@ body:not(.detail) #ondemandList { min-height:500px; position:relative;}
 		}
 		#timeTableMain .listen a:after {
 			content:''; display:block; width:40px; height:40px;
-			background:url(../radio/img/parts.png) no-repeat -125px -485px;
+			background:url(../img/parts.png) no-repeat -125px -485px;
 			background-size:300px auto;
 			position:absolute; top:50%; right:18px;
 			margin-top:-20px;
@@ -1632,7 +1632,7 @@ ul.bxslider { list-style:none;}
 	#slider-prev a:before,
 	#slider-next a:before {
 		content:""; display:block; width:35px; height:50px;
-		background:url(../radio/img/parts.png) no-repeat;
+		background:url(../img/parts.png) no-repeat;
 		background-size:300px auto;
 		position:absolute; top:50%;
 		margin-top:-25px;
@@ -1907,7 +1907,7 @@ br.sp2 { display:none;}
 	.idx #selectRadio .fm .channel { background:#f18e2b;}
 	.idx #selectRadio .channel:before {
 		content:''; display:block; width:105px; height:80px;
-		background:url(../radio/img/parts.png) no-repeat;
+		background:url(../img/parts.png) no-repeat;
 		background-size:300px auto;
 		position:absolute; top:-9px; right:0;
 	}
@@ -2065,7 +2065,7 @@ br.sp2 { display:none;}
 	}
 	.top-section .headings .more a:after {
 		content:''; display:inline-block; width:20px; height:20px;
-		background:url(../radio/img/parts.png) no-repeat 0 -30px;
+		background:url(../img/parts.png) no-repeat 0 -30px;
 		background-size:300px auto;
 		vertical-align:middle; margin:-3px 0 0 6px;
 	}

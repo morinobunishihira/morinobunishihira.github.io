@@ -94,7 +94,7 @@ var NHKSNS = function () {
     function i(e, t) {
         var n = '<li class="nhksns-{name}"><a href="{href}" {sendMetrics} target="_blank"><img  src="{img}" alt="{name}"></img></a>',
             i = w.SNS.resources[e];
-            console.log(i);
+
         switch (e) {
             case "twitter":
                 return h(n, {
