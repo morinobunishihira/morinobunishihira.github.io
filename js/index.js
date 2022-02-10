@@ -16,7 +16,7 @@ var $d = document.domain.indexOf("stg-") > -1 || document.domain.indexOf("dev-")
 $(function () {
     $.ajax({
 
-        url: "https://morinobunishihira.github.io/config/config_web.xml",
+        url: "https://www.nhk.or.jp/radio/config/config_web.xml",
         cache: !0,
         dataType: "xml",
         success: function (e) {
