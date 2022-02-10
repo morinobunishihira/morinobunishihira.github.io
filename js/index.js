@@ -1,4 +1,5 @@
 // ///////繧峨§繧銀�繧峨§繧� 繝医ャ繝励�繝ｼ繧ｸ/////////
+console.log(document);
 var $d = document.domain.indexOf("stg-") > -1 || document.domain.indexOf("dev-") > -1
         ? document.domain
         : "www.nhk.or.jp",
@@ -9,13 +10,15 @@ var $d = document.domain.indexOf("stg-") > -1 || document.domain.indexOf("dev-")
     info1path = domain + "/include/oshirase.xml",
     info2path = domain + "/include/oshirase2.html",
     nowDate = new Date;
+    console.log(domain);
 $(function () {
     $.ajax({
-        url: "https://www.nhk.or.jp/radio/config/config_web.xml",
+        // url: "https://www.nhk.or.jp/radio/config/config_web.xml",
+        url: "file:///C:/Users/西平守伸/Documents/02/0209NHK/radio/config/config_web.xml",
         cache: !0,
         dataType: "xml",
         success: function (e) {
-            console.log("g");
+            console.log("index.js");
             $config.info = $(e)
                 .find("info")
                 .eq(0)
