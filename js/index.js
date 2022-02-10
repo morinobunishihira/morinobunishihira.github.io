@@ -3,19 +3,20 @@ console.log(document);
 var $d = document.domain.indexOf("stg-") > -1 || document.domain.indexOf("dev-") > -1
         ? document.domain
         : "morinobunishihira.github.io",
-    domain = "//" + $d + "/radio",
+    domain = "//" + $d,
     jsonpath = domain + "/include/recommend.json",
     upper_banner_json = domain + "/banners/upper_banners.json",
     top_banner_json = domain + "/banners/banners.json",
     info1path = domain + "/include/oshirase.xml",
     info2path = domain + "/include/oshirase2.html",
     nowDate = new Date;
+    console.log(info1pathdomain);
     console.log(info1path);
     console.log(info2path);
 $(function () {
     $.ajax({
 
-        url: "https://morinobunishihira.github.io/config/config_web.xml",
+        url: "config/config_web.xml",
         cache: !0,
         dataType: "xml",
         success: function (e) {
