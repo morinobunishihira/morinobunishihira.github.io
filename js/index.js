@@ -20,7 +20,7 @@ $(function () {
         cache: !0,
         dataType: "xml",
         success: function (e) {
-            console.log("success");
+            console.log("config_web=success");
             $config.info = $(e)
                 .find("info")
                 .eq(0)
@@ -173,7 +173,13 @@ function getAPI() {
         url: $config.url_program_noa.replace(/{area}/, findAreakey($area)),
         cache: !0,
         dataType: "json",
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest);
+            console.log(textStatus);
+
+        },
         success: function (e) {
+            console.log("sucsess2");
             ($NOAjson =
                     { r1: !1,
                     r2: !1,
