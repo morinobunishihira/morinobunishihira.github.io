@@ -1,0 +1,156 @@
+{
+	"update": "2022-02-07 12:00",
+	"site_title": "おすすめ",
+	"contents": [{
+			"label": "情報",
+			"media_code": "",
+			"category": "",
+			"program_name": "新型コロナウイルス関連情報",
+			"headline": "",
+			"onair": "",
+			"url": "https://www.nhk.or.jp/radio/anshin/",
+			"thumbnail": "/radio/img/toppage/20220207/recommend_slider_1.jpg"
+		},
+		{
+			"label": "投稿募集",
+			"media_code": "",
+			"category": "",
+			"program_name": "MUSIC MEETS フィギュアスケート",
+			"headline": "",
+			"onair": "",
+			"url": "https://www4.nhk.or.jp/musicfigure/",
+			"thumbnail": "/radio/img/toppage/20220207/recommend_slider_2.jpg"
+		},
+		{
+			"label": "投稿募集",
+			"media_code": "",
+			"category": "",
+			"program_name": "今日は一日“乃木坂46”三昧～第二章～",
+			"headline": "",
+			"onair": "",
+			"url": "https://www4.nhk.or.jp/zanmai/404/",
+			"thumbnail": "/radio/img/toppage/20220207/recommend_slider_3.jpg"
+		},
+		{
+			"label": "",
+			"media_code": "",
+			"category": "#音楽,#J-POP",
+			"program_name": "【読むらじる。】ヤバイラジオ屋さん",
+			"headline": "忘れられないひと言は？あの名曲にのせて「ナニオッシャル」",
+			"onair": "",
+			"url": "https://www.nhk.or.jp/radio/magazine/article/yaba-radi/UMUPiwJQ7G.html",
+			"thumbnail": "/radio/img/toppage/20220207/recommend_1.jpg"
+		},
+		{
+			"label": "",
+			"media_code": "R1,FM",
+			"category": "",
+			"program_name": "【聴き逃し配信】北京オリンピック競技中継",
+			"headline": "オリンピック期間中に放送した競技中継を聴き逃し配信いたします。是非、お楽しみください。",
+			"onair": "",
+			"url": "https://www.nhk.or.jp/radio/ondemand/corners.html?p=F382",
+			"thumbnail": "/radio/img/toppage/20220207/recommend_2.jpg"
+		},
+		{
+			"label": "",
+			"media_code": "",
+			"category": "#医療・健康,#カラダのハナシ",
+			"program_name": "【読むらじる。】マイあさ！「健康ライフ」",
+			"headline": "「時間栄養学」の考え方（３）肥満を抑えるには",
+			"onair": "",
+			"url": "https://www.nhk.or.jp/radio/magazine/article/my-asa/iziHHrOD-z.html",
+			"thumbnail": "/radio/img/toppage/20220207/recommend_3.jpg"
+		},
+		{
+			"label": "",
+			"media_code": "R2",
+			"category": "",
+			"program_name": "【聴き逃し配信】ラジオで！カムカムエヴリバディ",
+			"headline": "「カムカムエヴリバディ」の主人公たちと一緒に英語を学びませんか？",
+			"onair": "",
+			"url": "https://www.nhk.or.jp/radio/ondemand/detail.html?p=7137_01",
+			"thumbnail": "/radio/img/toppage/20220207/recommend_4.jpg"
+		},
+		{
+			"label": "",
+			"media_code": "",
+			"category": "#歴史,#大河ドラマ",
+			"program_name": "【読むらじる。】武内陶子のごごカフェ",
+			"headline": "れきしクンの面白武将物語",
+			"onair": "",
+			"url": "https://www.nhk.or.jp/radio/magazine/article/gogocafe/ApAF30TM_Y.html",
+			"thumbnail": "/radio/img/toppage/20220207/recommend_5.jpg"
+		},
+		{
+			"label": "",
+			"media_code": "FM",
+			"category": "",
+			"program_name": "【聴き逃し配信】世界の快適音楽セレクション",
+			"headline": "ゴンチチが世界中の快適な音楽をセレクトしてお届けします",
+			"onair": "",
+			"url": "https://www.nhk.or.jp/radio/ondemand/detail.html?p=0167_01",
+			"thumbnail": "/radio/img/toppage/20220207/recommend_6.jpg"
+		},
+		{
+			"label": "",
+			"media_code": "",
+			"category": "#医療・健康,#認知症",
+			"program_name": "【読むらじる。】マイあさ！「健康ライフ」",
+			"headline": "軽度の認知症なら回復できる",
+			"onair": "",
+			"url": "https://www.nhk.or.jp/radio/magazine/article/my-asa/i4tjhbPuRt.html",
+			"thumbnail": "/radio/img/toppage/20220207/recommend_7.jpg"
+		},
+		{
+			"label": "",
+			"media_code": "R2",
+			"category": "",
+			"program_name": "【聴き逃し配信】朗読",
+			"headline": "「岡本かの子作品集」朗読：山像かおり",
+			"onair": "",
+			"url": "https://www.nhk.or.jp/radio/ondemand/detail.html?p=0971_01",
+			"thumbnail": "/radio/img/toppage/20220207/recommend_8.jpg"
+		},
+		{
+			"label": "",
+			"media_code": "",
+			"category": "#のりもの,#鉄道",
+			"program_name": "【読むらじる。】鉄旅・音旅 出発進行！～音で楽しむ鉄道旅～",
+			"headline": "明治に始まった日本の鉄道。驚きの「進化」に迫る！（前編）",
+			"onair": "",
+			"url": "https://www.nhk.or.jp/radio/magazine/article/tetsutabi/TOd_v7E7V6.html",
+			"thumbnail": "/radio/img/toppage/20220207/recommend_9.jpg"
+		},
+		{
+			"label": "",
+			"media_code": "R1",
+			"category": "",
+			"program_name": "【聴き逃し配信】らじらー！",
+			"headline": "“ラジオを楽しむ人”を増やしたい！毎週土曜日曜生放送！",
+			"onair": "",
+			"url": "https://www.nhk.or.jp/radio/ondemand/corners.html?p=2214",
+			"thumbnail": "/radio/img/toppage/20220207/recommend_10.jpg"
+		},
+		{
+			"label": "",
+			"media_code": "",
+			"category": "#趣味・カルチャー,#歴史",
+			"program_name": "【読むらじる。】DJ日本史",
+			"headline": "天才詩人・金子みすゞ　70年後に伝わった娘への愛",
+			"onair": "",
+			"url": "https://www.nhk.or.jp/radio/magazine/detail/dj-nihonshi20191027_02.html",
+			"thumbnail": "/radio/img/toppage/20220207/recommend_11.jpg"
+		},
+		{
+			"label": "",
+			"media_code": "FM",
+			"category": "",
+			"program_name": "【聴き逃し配信】ジャズ・トゥナイト",
+			"headline": "最先端からクラシック・ジャズまでを、幅広く紹介します",
+			"onair": "",
+			"url": "https://www.nhk.or.jp/radio/ondemand/detail.html?p=0449_01",
+			"thumbnail": "/radio/img/toppage/20220207/recommend_12.jpg"
+		}
+
+	]
+}

@@ -1,0 +1,27 @@
+{
+    "top": {
+        "rotate_interval": 5300,
+        "banner_list": [
+            {
+                "url_image": "./banners/img/bnr_210623_anshin.jpg",
+                "url_click": "/radio/anshin/",
+                "alt": "安全安心 特設サイト"
+            },
+            {
+                "url_image": "./banners/img/bnr_211104_audiobook.jpg",
+                "url_click": "/radio/audiobook/",
+                "alt": "らじる文庫"
+            },
+            {
+                "url_image": "./banners/img/bnr_210616_local.jpg",
+                "url_click": "/radio/local/",
+                "alt": "注目！地方局番組"
+            },
+            {
+                "url_image": "./banners/img/bnr_210710_frequency.jpg",
+                "url_click": "/radio/info/frequency.html",
+                "alt": "NHKラジオ周波数"
+            }
+        ]
+    }
+}

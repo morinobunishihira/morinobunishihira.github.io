@@ -1,0 +1,38 @@
+{
+	"top": {
+		"reload_interval": 330000,
+		"rotate_interval": 8000,
+		"random_start": false,
+		"banner_list": [
+            {
+                "url_image": "https://www.nhk.or.jp/radio/banners/img/appbnr_210701_anshin.jpg",
+				"url_click": "https://www.nhk.or.jp/radio/anshin/",
+				"alt": "安全安心特設サイト"
+            },
+            {
+                "url_image": "https://www.nhk.or.jp/radio/banners/img/appbnr_210710_frequency.jpg",
+				"url_click": "https://www.nhk.or.jp/radio/info/frequency.html",
+				"alt": "周波数"
+            },
+            {
+                "url_image": "https://www.nhk.or.jp/radio/banners/img/bnr_211104_audiobook-app.jpg",
+				"url_click": "https://www.nhk.or.jp/radio/audiobook/",
+				"alt": "らじる文庫"
+            },
+            {
+                "url_image": "https://www.nhk.or.jp/radio/banners/img/app-bnr_211105_comecome.jpg",
+				"url_click": "https://www.nhk.or.jp/radio/ondemand/detail.html?p=7137_01",
+				"alt": "【聴き逃し配信中】ラジオで！カムカムエブリバディ"
+            }
+		]
+	},
+	"ondemand": {
+		"banner_list": [
+			{
+				"url_image": "https://www.nhk.or.jp/radio/banners/img/banner1177_radionews.png",
+				"url_click": "https://www.nhk.or.jp/radionews/",
+				"alt": "ラジオニュース"
+			}
+		]
+	}
+}
