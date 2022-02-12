@@ -20,7 +20,7 @@ $(function () {
         cache: !0,
         dataType: "xml",
         success: function (e) {
-            console.log("index.js");
+            console.log("success");
             $config.info = $(e)
                 .find("info")
                 .eq(0)
@@ -54,7 +54,7 @@ $(function () {
                 .text(),
             callback()
         },
-        error(XMLHttpRequest, textStatus, errorThrown) {
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
             console.log(XMLHttpRequest);
             console.log(textStatus);
 
