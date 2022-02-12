@@ -16,7 +16,7 @@ var $d = document.domain.indexOf("stg-") > -1 || document.domain.indexOf("dev-")
 $(function () {
     $.ajax({
 
-        url: "https://www.nhk.or.jp/radio/config/config_web.xml",
+        url: "https://www.nhk.or.jp/config/config_weba.xml",
         cache: !0,
         dataType: "xml",
         success: function (e) {
@@ -53,6 +53,11 @@ $(function () {
                 .eq(0)
                 .text(),
             callback()
+        },
+        error(XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest);
+            console.log(textStatus);
+
         }
     }),
     $("#ui2019 .off1,#ui2019 .off2 a").on("click", function () {
