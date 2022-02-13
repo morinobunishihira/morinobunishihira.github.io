@@ -16,6 +16,7 @@ $(function() {
     .then (
         function(data) {
             console.log("success");
+            alert("ok");
             $config.info = $(data).find("info").eq(0).text(),
             $(data).find("stream_url data").each(function() {
                 $config.stream_url.push ({
