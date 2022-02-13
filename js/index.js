@@ -28,8 +28,23 @@ $(function() {
                     fmhls: $(this).find("fmhls").text()
                 })
             }),
-            console.log($config.stream_url);
-
+            $config.url_program_noa = $(e)
+                .find("url_program_noa")
+                .eq(0)
+                .text(),
+            $config.url_program_day = $(e)
+                .find("url_program_day")
+                .eq(0)
+                .text(),
+            $config.url_program_detail = $(e)
+                .find("url_program_detail")
+                .eq(0)
+                .text(),
+            $config.radiru_twitter_timeline = $(e)
+                .find("radiru_twitter_timeline")
+                .eq(0)
+                .text(),
+            // callback()
         },
         function() {
             alert("err");
@@ -38,11 +53,13 @@ $(function() {
     )      
     
 });     
-var $config = {
-    info: "",
-    stream_url: [],
-    url_program_noa: "",
-    url_program_day: "",
-    url_program_detail: "",
-    radiru_twitter_timeline: ""
-}
+var $area,
+    $json,
+    $config = {
+        info: "",
+        stream_url: [],
+        url_program_noa: "",
+        url_program_day: "",
+        url_program_detail: "",
+        radiru_twitter_timeline: ""
+    },
