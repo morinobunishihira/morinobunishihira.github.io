@@ -1,3 +1,19 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+html, body {height: 100%;}
+body {font-size: 62.5%; /* font-size 1em = 10px on default browser settings */
+     line-height: 1;}
+h1, h2, h3, h4, h5, h6 { font-size:100%;}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary { display:block;}
+audio,canvas,progress,video { display:inline-block;}
+
+a,embed,object { outline:none;}
+
+img { border:none; box-sizing:content-box; -webkit-box-sizing:content-box; -moz-box-sizing:content-box;}
+
+hr { display:none;}
+li { list-style:none;}
+a { background-color:transparent; -webkit-text-decoration-skip:objects;}
+
 /*@common
 /////////////////////////////////////////////////////////////////////*/
 body {
@@ -6,246 +22,105 @@ body {
 	-webkit-tap-highlight-color:transparent;
 }
 a { color:#262626; text-decoration:none; -webkit-transition:all 0.2s; transition:all 0.2s;}
-.inner { width:1000px; margin:0 auto; position:relative;}
+.inner { width:1000px; margin:0 auto; position:relative;background: rgb(252, 240, 240);}
 .tb { display:table; width:100%; table-layout:fixed; margin:0 auto; position:relative;}
 .cell { display:table-cell; vertical-align:top;}
 .red { color:#df1825;}
-.pic img { display:block; width:100%;}
-#container { overflow:hidden; position:relative;}
-#container input, #container button,
-#container textarea, #container select {
-	border:none; border-radius:0; outline:none;
-	background:none; vertical-align:baseline; font-family:inherit;
-	-webkit-appearance:none; -moz-appearance:none; appearance:none;
-	-webkit-transition:all 0.25s; transition:all 0.25s;
-}
-.pc #nol_header #nol_emergencyNews{border-bottom:solid 1px #ddd;background:#f9f9f9;}
 
 /*head*/
-#contentsHead { width:100%; height:115px; background:#fff; position:relative;}
-	#contentsHead h1 {
-		width:170px; height:60px;
-		background:url(../img/parts.png) no-repeat 0 -420px;
-		background-size:300px auto;
-		position:absolute; top:27px; left:18px;
-	}
-	#contentsHead h1 a {
-		display:block; width:100%; height:100%;
-		text-indent:110%; white-space:nowrap; overflow:hidden;
-	}
+#contentsHead { width:100%; height:115px; background:rgb(243, 206, 206); position:relative;}
+#contentsHead h1 {
+    width:170px; height:60px;
+    background:url(../img/parts.png) no-repeat 0 -420px;
+    background-size:300px auto;
+    background-color: aquamarine;
+    position:absolute; top:27px; left:18px;
+}
+/* #contentsHead h1 a {
+    display:block; width:100%; height:100%;
+    text-indent:110%; white-space:nowrap; overflow:hidden;
+} */
 .idx #contentsHead { height:auto; border-left:20px solid #df1825; position:relative;}
-	.idx #contentsHead header { width:235px; background:#fff; padding-top:115px; position:relative;}
-	.idx #contentsHead h1 {
-		text-indent:110%; white-space:nowrap; overflow:hidden;
-		top:30px; left:50%; margin-left:-85px;
+.idx #contentsHead header { width:235px; background:#fff; padding-top:115px; position:relative;}
+.idx #contentsHead h1 {
+    text-indent:110%; white-space:nowrap;  overflow:hidden; /* 欄外にして隠す */
+    top:30px; left:50%; margin-left:-85px;
+}
+/*nav*/
+#globalnav { font-weight:bold;}
+#globalnav .nav2 { display:none;}
+#globalnav .nav1-1 > li { position:relative;}
+#globalnav .nav1-1 > li > a {
+    font-size:160%; color:#343434; cursor:pointer;
+    padding-left:68px; position:relative;
+}
+#globalnav .nav1-1 > li > a:before {
+    content:""; display:block; width:35px; height:25px;
+    background:url(../img/parts.png) no-repeat;
+    background-size:300px auto;
+    background-color: aquamarine;
+    position:absolute; top:50%; left:22px;
+    margin-top:-12.5px;
+}
+#globalnav .nav1-1 > li.m1 > a:before { opacity:0.15;}
+#globalnav .nav1-1 > li.m3 > a:before { opacity:1;}
+#globalnav .nav1-1 > li.m2 > a:before,
+#globalnav .nav1-1 > li.m4 > a:before { opacity:0.2;}
+#globalnav .nav1-1 > li.m1 > a:before { background-position:0 0;}
+#globalnav .nav1-1 > li.m2 > a:before { background-position:-40px 0;}
+#globalnav .nav1-1 > li.m3 > a:before { background-position:-220px -485px; height:30px; margin-top:-15px;}
+#globalnav .nav1-1 > li.m4 > a:before { background-position:-40px 0;}
+	/*idx*/
+	.idx #globalnav { border-top:2px solid #f4f0f1;}
+	.idx #globalnav .nav1-1 > li > a {
+		display:block; height:56px; line-height:56px;
+		border-bottom:2px solid #f4f0f1;
 	}
+
+    /*地域*/
+.idx #selectArea { width:170px; position:absolute; top:27px; right:20px; z-index:10;}
+#selectArea ul {
+    width:170px; background:#fff;
+    position:absolute; top:34px; left:0;
+    display:none;
+}
+#selectArea ul li { border-top:2px solid #f4f0f1;}
+#selectArea ul li a {
+    display:block; width:100%; height:34px; line-height:34px;
+    font-size:180%; text-align:center; font-weight:normal;
+    background:#fff; padding-top:1px; position:relative;
+    cursor:pointer;
+}
+#selectArea ul li a:hover,
+#selectArea ul li.this a { background:#f4f0f1;}
 
 /*＠TOP
 ///////////////////////////////////////////////////////*/
 /*ただいま放送中*/
 .idx #nowOnair { background:#df1825;}
 .idx #nowOnair .headings { color:#fff; font-weight:bold; padding:34px 20px 20px 30px; position:relative;}
-.idx #nowOnair .headings h2 { display:inline-block; font-size:200%; letter-spacing:0.05em;}
-.idx #nowOnair .headings p { display:inline-block; font-size:140%; opacity:0.7; padding-left:1em;}
 /*3局*/
 .idx #selectRadio .r1 { background:#c7000a;}
 .idx #selectRadio .r2 { background:#22943a;}
 .idx #selectRadio .fm { background:#f18e2b;}
-.idx #selectRadio .channel:before {
-    content:''; display:block; width:105px; height:80px;
-    background:url(../img/parts.png) no-repeat;
-    background-size:300px auto;
-    position:absolute; top:-9px; right:0;
-}
 .idx #selectRadio .cell a {
 	display:block; width:100%; color:#fff; font-weight:bold;
 	overflow:hidden; position:relative; z-index:1;
 	padding-bottom:100px;
 	cursor:pointer;
 	}
-	.idx #selectRadio .cell a:after {
+    .idx #selectRadio .cell a:after {
 		content:''; display:block; width:100%; height:100%;
 		background:#262626; opacity:0;
 		position:absolute; top:0; left:0; z-index:2;
 	}
-	.idx #selectRadio .pic {
-		width:100%; height:0; padding-top:56.25%;
-		position:relative; overflow:hidden;
-		background:transparent no-repeat center center;
-		background-size:102% auto;
-		background-color:rgba(0, 0, 0, 0.2);
-	}
-	.idx #selectRadio .pic img { position:absolute; top:0; left:0;}
-	.idx #selectRadio .title {
-		display:block; width:100%; height:100px;
-		padding:40px 10px 20px 98px;
-		position:absolute; bottom:0; left:0; z-index:1;
-		}
-		.idx #selectRadio .r1 .title { background:#c7000a;}
-		.idx #selectRadio .r2 .title { background:#22943a;}
-		.idx #selectRadio .fm .title { background:#f18e2b;}
-	.idx #selectRadio .title h3 {
-		height:42px; font-size:160%;
-		line-height:1.35; overflow:hidden;
-	}
-	.idx #selectRadio .title .time { font-size:120%; position:absolute; top:14px; left:98px; opacity:0.7;}
-	.idx #selectRadio .title .channel {
-		display:block; width:90px; height:90px;
-		background:url(../img/parts.png) no-repeat;
-		background-size:300px auto;
-		text-indent:110%; white-space:nowrap; overflow:hidden;
-		position:absolute; top:-12px; left:4px;
-		}
-		.idx #selectRadio .r1 .title .channel { background-position:0 -255px;}
-		.idx #selectRadio .r2 .title .channel { background-position:-95px -255px;}
-		.idx #selectRadio .fm .title .channel { background-position:-190px -255px;}
-	.idx #selectRadio .title .listen {
-		display:block; width:140px; height:34px;
-		font-size:18px; color:#fff; text-align:center;
-		letter-spacing:0.05em;
-		background:rgba(0, 0, 0, 0.15); border-radius:50px;
-		position:absolute; bottom:-50px; left:50%;
-		padding-top:9px; margin-left:-70px;
-		}
-		.idx #selectRadio .title .listen:after {
-			content:''; display:block; width:26px; height:26px;
-			background:url(../img/parts.png) no-repeat -75px -30px;
-			background-size:300px auto;
-			position:absolute; top:50%; right:18px;
-			margin-top:-13px;
-		}
-/*3局hover*/
-.idx #selectRadio:hover .cell a:after { opacity:0.5;}
-.idx #selectRadio:hover .cell:hover a:hover:after { opacity:0;}
-.idx #selectRadio a:hover .title { height:160px;}
-.idx #selectRadio a:hover .title h3 { height:63px;}
-.idx #selectRadio a:hover .title .listen { bottom:10px;}
-.idx #selectRadio .cell a:after,
-.idx #selectRadio .title,
-.idx #selectRadio .title h3,
-.idx #selectRadio .title .listen { -webkit-transition:all 0.3s; transition:all 0.3s;}
-/*探す*/
-.idx #spOndemand { display:none;}
-.idx #radioOndemand { padding-top:12px;}
-	.idx #radioOndemand a {
-		display:block; width:100%; height:63px;
-		font-size:260%; color:#fff;
-		background:#006dc1;
-		padding-left:150px; position:relative;
-	}
-	.idx #radioOndemand a:hover { background:#407ec4;}
-	.idx #radioOndemand a:before {
-		content:''; display:block; width:75px; height:63px;
-		background:#407ec4;
-		position:absolute; top:0; right:0;
-	}
-	.idx #radioOndemand a:after {
-		content:''; display:block; width:35px; height:35px;
-		background:url(../img/parts.png) no-repeat -110px 0;
-		background-size:300px auto;
-		position:absolute; top:50%; right:20px;
-		margin-top:-17.5px;
-	}
-	.idx #radioOndemand a span { display:inline-block; height:63px; padding-top:19px; position:relative;}
-	.idx #radioOndemand a span:before {
-		content:''; display:block; width:90px; height:80px;
-		background:url(../img/parts.png) no-repeat -95px -160px;
-		background-size:300px auto;
-		position:absolute; top:-10px; left:-120px;
-	}
-	.idx #radioOndemand a span:after {
-		content:''; display:inline-block; width:20px; height:20px;
-		background:url(../img/parts.png) no-repeat 0 -30px;
-		background-size:300px auto;
-		position:absolute; top:50%; right:-35px;
-		margin-top:-9px;
-	}
-/*nowOnair*/
-.idx #nowOnair { background:#f8f8f8; position:relative;}
-	.idx #selectRadio .r1 { background:#f8f8f8;}
-	.idx #selectRadio .r2 { background:#fff;}
-	.idx #selectRadio .fm { background:#f8f8f8;}
-	.idx #selectRadio .cell a { min-height:310px; padding-bottom:90px;}
-	.idx #selectRadio .channel {
-		height:70px; overflow:hidden;
-		padding:9px 10px 5px; position:relative;
-	}
-	.idx #selectRadio .r1 .channel { background:#c7000a;}
-	.idx #selectRadio .r2 .channel { background:#22943a;}
-	.idx #selectRadio .fm .channel { background:#f18e2b;}
-	.idx #selectRadio .channel:before {
-		content:''; display:block; width:105px; height:80px;
-		background:url(../img/parts.png) no-repeat;
-		background-size:300px auto;
-		position:absolute; top:-9px; right:0;
-	}
-	.idx #selectRadio .r1 .channel:before { background-position:0 -530px;}
-	.idx #selectRadio .r2 .channel:before { background-position:-110px -530px;}
-	.idx #selectRadio .fm .channel:before { background-position:0 -615px;}
-	.idx #selectRadio .channel h2 { font-size:16px; line-height:1.2; position:relative;}
-	.idx #selectRadio .channel h2 span { padding-left:0.2em;}
-	.idx #selectRadio .channel .c-time {
-		font-size:32px; line-height:1.2; text-align:center;
-		letter-spacing:-0.03em; padding-right:5px;
-		position:relative;
-	}
-	.idx #selectRadio .channel .c-time span {
-		display:inline-block; font-size:14px; font-weight:normal;
-		vertical-align:baseline; padding:0 0.1em;
-	}
-	.idx #selectRadio .channel .c-time span:nth-child(2) { font-size:25px; vertical-align:top; padding-top:5px;}
-	/*pic*/
-	.idx #selectRadio .pic { background:none;}
-	.idx #selectRadio .picinner {
-		width:100%; height:100%;
-		position:absolute; top:0; left:0;
-		background:transparent no-repeat center center;
-		background-size:cover;
-		-webkit-transition:-webkit-transform 0.25s;
-		transition:transform 0.3s;
-		-webkit-backface-visibility:hidden;
-		backface-visibility:hidden;
-	}
-	.idx #selectRadio .pic .icon-play {
-		width:50px; height:50px;
-		background:#fff; border-radius:50%;
-		position:absolute; bottom:7px; right:7px;
-		transition:all 0.3s;
-	}
-	.idx #selectRadio .pic .icon-play:before {
-		content:''; display:block; width:0; height:0;
-		position:absolute; top:50%; left:50%; z-index:20;
-		border:11px transparent solid;
-		border-left-color:#df1825;
-		border-width:11px 0 11px 16px;
-		margin:-11px 0 0 -5.5px;
-		transition:all 0.3s;
-	}
-	.idx #selectRadio .r1 .pic .icon-play:before { border-left-color:#a60004;}
-	.idx #selectRadio .r2 .pic .icon-play:before { border-left-color:#178229;}
-	.idx #selectRadio .fm .pic .icon-play:before { border-left-color:#d26f00;}
-	/*title*/
-	.idx #selectRadio .title {
-		height:90px; font-size:17px; font-weight:normal;
-		color:#161616; line-height:1.4; padding:10px;
-	}
-	.idx #selectRadio .r1 .title,
-	.idx #selectRadio .r2 .title,
-	.idx #selectRadio .fm .title { background:none;}
-	.idx #selectRadio .title p {
-		height:70px; overflow:hidden;
-		display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:3;
-	}
-	/*hover*/
-	.idx #selectRadio .r1 a:hover .pic .icon-play { background:#c7000a;}
-	.idx #selectRadio .r2 a:hover .pic .icon-play { background:#22943a;}
-	.idx #selectRadio .fm a:hover .pic .icon-play { background:#f18e2b;}
-	.idx #selectRadio .r1 a:hover .pic .icon-play:before,
-	.idx #selectRadio .r2 a:hover .pic .icon-play:before,
-	.idx #selectRadio .fm a:hover .pic .icon-play:before { border-left-color:#fff;}
-	.idx #selectRadio a:hover .title { height:90px;}
-	.idx #selectRadio:hover .cell a:after { opacity:0;}
-	.idx #selectRadio a:hover .picinner {
-		-webkit-transform:scale3d(1.1,1.1,1);
-		transform:scale3d(1.1,1.1,1);
-	}
+
+
+
+
+
+
+
+
+
+

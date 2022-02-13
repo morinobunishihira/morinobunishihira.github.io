@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<head prefix="og: http://org.me/ns# http://ogd.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NHKラジオ らじる★らじる</title>
-    <meta property="og:title" content="NHKラジオ らじる★らじる">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.nhk.or.jp/radio/img/brand.png">
-   
-    <link rel="stylesheet" media="screen and (min-width:768px)" href="./css/pc.css">
-    <link rel="stylesheet" media="screen and (max-width:767px)" href="./css/sp.css">
-    <!-- <link rel="canonical" href="https://www.nhk.or.jp/radio/"> -->
-    <script src="common/jquery/jquery-1.9.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-    <script src="common/sp/nol_SmartPhone.js" charset="utf-8"></script>
-</head>
-<body id="pagetop" class="idx">
-    444
+    <title>NHKラジオ　らじる★らじる</title>
+    <meta property="og:title" content="NHKラジオ　らじる★らじる">
+    <meta property="og:type" content="website" >
+    <meta property="og:image" content="https://www.nhk.or.jp/radio/img/brand.png" >
+    <link rel="stylesheet" media="screen and (min-width:768px)" href="css/pc.css">
 
-    <!-- <img src="https://www.nhk.or.jp/radio/include/recommend.json" alt="">
-    <img src="https://www.nhk.or.jp/radio/banners/upper_banners.json" alt="">
-    <img src="https://www.nhk.or.jp/radio/banners/banners.json" alt=""> -->
-<!-- NHK Header  -->
-<script>nol_showCmnHeader()</script>  
-<!-- Contents -->
+    <script src="common/jquery/jquery-1.9.js"></script>
+    <script src="common/sp/nol_SmartPhone.js" charset="utf-8"></script>
+</head> 
+<body id="pagetop" class="idx" >
+    <!-- <img src="https://www.nhk.or.jp/radio/img/brand.png" alt=""> -->
+    <!-- NHK Header -->
+    <!-- <script>nol_showCmnHeader()</script> -->
+    <!-- Contents -->
 <div id="container">
-<div id="readpagelink"><a href="./k/">読み上げ版ページへ</a></div>
+<div id="readpagelink"><a href="./k/">読み上げ版ページへ</a></div>    
+<!-- header -->
 <div id="contentsHead">
     <div class="tb">
         <header class="cell">
-            <h1>NHKラジオ らじる★らじる</h1>
+            <h1>NHKラジオ　らじる★らじる</h1>
             <!-- 地域選択 -->
             <div id="selectArea">
                 <div id="areaOpen"></div>
@@ -45,10 +39,21 @@
                 </ul>
             </div>
             <nav id="globalnav">
-
+                <div class="nav1">
+                    <ul class="nav1-1">
+                        <li class="m1"><a href="./hensei/">ネットラジオ番組表</a></li>
+                        <li class="m2"><a href="./program/">番組を探す</a></li>
+                        <li class="m9"><a>NEWS</a>
+                            <div class="nav-sub"><ul>
+                                    <li><a href="https://www.nhk.or.jp/radionews/" target="_brank" rel="noopener noreferer">ニュース聴き逃し</a></li>
+                                    <li><a href="https://www3.nhk.or.jp/nhkworld/en/radio/about/" target="_brank" rel="noopener noreferer">Multilingual News</a></li>
+                            </ul></div>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
-        <!-- ただいま放送中 -->
+<!-- ただいま放送中 -->
         <div id="nowOnair" class="cell">
             <!-- 放送局選択 -->
             <div id="selectRadio" class="tb">
@@ -58,45 +63,45 @@
                         <div class="c-time"></div>
                     </div>
                     <div class="pic">
-                        <div class="picinner" ></div>
+                        <div class="picinner"></div>
                         <span class="icon-play"></span>
                     </div>
                     <div class="title"><p></p></div>
                 </a></div>
                 <div class="r2 cell"><a href="javascript:void(0);">
-					<div class="channel">
-						<h2>ラジオ第2 <span class="live">LIVE</span></h2>
-						<div class="c-time"></div>
-					</div>
-					<div class="pic">
-						<div class="picinner"></div>
-						<span class="icon-play"></span>
-					</div>
-					<div class="title"><p></p></div>
-				</a></div>
+                    <div class="channel">
+                        <h2>ラジオ第２<span>LIVE</span></h2>
+                        <div class="c-time"></div>
+                    </div>
+                    <div class="pic">
+                        <div class="picinner"></div>
+                        <span class="icon-play"></span>
+                    </div>
+                    <div class="title"><p></p></div>
+                </a></div>
                 <div class="fm cell"><a href="javascript:void(0);">
-					<div class="channel">
-						<h2>NHK-FM <span class="live">LIVE</span></h2>
-						<div class="c-time"></div>
-					</div>
-					<div class="pic">
-						<div class="picinner"></div>
-						<span class="icon-play"></span>
-					</div>
-					<div class="title"><p></p></div>
-				</a></div>
+                    <div class="channel">
+                        <h2>NHK-FM<span>LIVE</span></h2>
+                        <div class="c-time"></div>
+                    </div>
+                    <div class="pic">
+                        <div class="picinner"></div>
+                        <span class="icon-play"></span>
+                    </div>
+                    <div class="title"><p></p></div>
+                </a></div>
             </div>
             <div class="loader"><span></span></div>
         </div>
     </div>
+</div>
+</div> 
 
-</div>
-</div>
 <script src="common/sns/nol_share.js" charset="utf-8"></script>
-<script src="js/jquery.bxslider.min.js" charset="utf-8"></script>
-<script src="js/slick.min.js" charset="utf-8"></script>
-<script src="js/jquery.easing.1.3.js" charset="utf-8"></script>
-<script src="js/common.js" charset="utf-8"></script>
-<script src="js/index.js" charset="utf-8"></script>
-</body>
+<script src="./js/jquery.bxslider.min.js" charset="utf-8"></script>
+<script src="./js/slick.min.js" charset="utf-8"></script>
+<script src="./js/jquery.easing.1.3.js" charset="utf-8"></script>
+<script src="./js/index.js" charset="utf-8"></script>
+</body>   
+
 </html>
