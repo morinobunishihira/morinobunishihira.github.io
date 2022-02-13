@@ -16,10 +16,13 @@ $(function() {
     .then (
         function() {
             console.log("config_web=success");
-            $config.info = $(e)
-                .find("info")
-                .eq(0)
-                .text(),
+            $config.info = $(e).find("info").eq(0).text(),
+            $(e).find("stream_url data").each(function() {
+                $config.stream_url.push ({
+                    areajp: $this.find("areajp").text(),
+                    area: $this.find("area").text(),
+                })
+            })
             console.log($config.info);
         },
         function() {
