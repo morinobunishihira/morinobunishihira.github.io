@@ -29,6 +29,7 @@ $(function() {
                 })
             }),
             console.log($config.info);
+            alert("ok");
         },
         function() {
             alert("err");
