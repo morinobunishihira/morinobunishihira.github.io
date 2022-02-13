@@ -11,15 +11,19 @@ $(function() {
         url: "https://morinobunishihira.github.io/config/config_web.xml",
         cache: !0,
         dataType: "xml",
-        success:function(e) {
-            $config.info = $(e).find("info").eq(0).text(),
-            console.log($config.info);
-            // console.log($(e));
-        },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            // console.log(XMLHttpRequest);
-            console.log("err");
-
-        }
     })
+    .then(
+        data => {
+            $config.info = $(data)
+                .find("info")
+                .eq(0)
+                .text(),
+                console.log($config.info);
+        },
+        error => {
+            alert("err");
+        }
+      );       
+
+
 })     
