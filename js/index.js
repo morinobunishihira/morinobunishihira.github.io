@@ -14,23 +14,14 @@ $(function() {
         success: function (e) {
             console.log("config_web=success");
             $config.info = $(e)
-            .find("info")
-            .eq(0)
-            .text(),
-            $(e).find("stream_url data").each(function () {
-                $config.stream_url.push({
-                    areajp: $(this).find("areajp").text(),
-                    area: $(this).find("area").text(),
-                    apikey: $(this).find("apikey").text(),
-                    areakey: $(this).find("areakey").text(),
-                    r1hls: $(this).find("r1hls").text(),
-                    r2hls: $(this).find("r2hls").text(),
-                    fmhls: $(this).find("fmhls").text()
-                })
-            }),
-        }    
-           
+                .find("info")
+                .eq(0)
+                .text();
+            console.log($config.info);
+        }       
     });       
-
-
+    
 })     
+var $config = {
+    info: "",
+}
