@@ -16,12 +16,12 @@ $(function() {
             $config.info = $(e)
                 .find("info")
                 .eq(0)
-                .text();
+                .text(),
             console.log($config.info);
         }       
     });       
     
-})     
+});     
 var $config = {
     info: "",
 }
