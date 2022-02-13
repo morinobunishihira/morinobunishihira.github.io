@@ -21,6 +21,11 @@ $(function() {
                 $config.stream_url.push ({
                     areajp: $this.find("areajp").text(),
                     area: $this.find("area").text(),
+                    apikey: $(this).find("apikey").text(),
+                    areakey: $(this).find("areakey").text(),
+                    r1hls: $(this).find("r1hls").text(),
+                    r2hls: $(this).find("r2hls").text(),
+                    fmhls: $(this).find("fmhls").text()
                 })
             })
             console.log($config.info);
@@ -34,4 +39,9 @@ $(function() {
 });     
 var $config = {
     info: "",
+    stream_url: [],
+    url_program_noa: "",
+    url_program_day: "",
+    url_program_detail: "",
+    radiru_twitter_timeline: ""
 }
