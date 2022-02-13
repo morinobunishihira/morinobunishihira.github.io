@@ -14,6 +14,7 @@ $(function() {
     })
     .then(
         data => {
+            var $config;
             $config.info = $(data)
                 .find("info")
                 .eq(0)
