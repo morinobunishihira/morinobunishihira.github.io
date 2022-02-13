@@ -29,7 +29,7 @@ $(function() {
                     fmhls: $(this).find("fmhls").text()
                 })
             }),
-            console.log($config.info);
+            console.log($config.stream_url);
             alert("ok");
         },
         function() {
