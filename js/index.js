@@ -13,12 +13,12 @@ $(function() {
         dataType: "xml",
         success: function (e) {
             console.log("config_web=success");
-            $config.info = $(e)
-                .find("info")
-                .eq(0)
-                .text(),
-            callback()
-        },        
+            // $config.info = $(e)
+            //     .find("info")
+            //     .eq(0)
+            //     .text(),
+            // callback()
+        }       
     });       
 
 
