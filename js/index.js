@@ -16,8 +16,8 @@ $(function() {
     .then (
         function() {
             console.log("config_web=success");
-            $config.info = $(data).find("info").eq(0).text(),
-            $(data).find("stream_url data").each(function() {
+            $config.info = data.find("info").eq(0).text(),
+            data.find("stream_url data").each(function() {
                 $config.stream_url.push ({
                     areajp: $this.find("areajp").text(),
                     area: $this.find("area").text(),
