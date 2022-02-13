@@ -11,6 +11,7 @@ $(function() {
         url: "https://morinobunishihira.github.io/config/config_web.xml",
         // cache: !0,
         cache: false,
+        async : false, 
         dataType: "xml"
     })
     .then (
