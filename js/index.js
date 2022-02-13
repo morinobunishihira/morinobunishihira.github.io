@@ -44,7 +44,8 @@ $(function() {
                 .find("radiru_twitter_timeline")
                 .eq(0)
                 .text(),
-            // callback()
+            console.log($config);    
+            // callback();
         },
         function() {
             alert("err");
