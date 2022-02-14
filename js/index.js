@@ -1,5 +1,5 @@
 /////////らじる★らじる トップページ/////////
-alert("333");
+
 var $d = document.domain.indexOf("stg-") > -1 || document.domain.indexOf("dev-") > -1 ? document.domain : "morinobunishihira.github.io"
   , domain = "//" + $d 
   , jsonpath = domain + "/include/recommend.json"
@@ -575,4 +575,5 @@ var _splash = {
         _splash.Active = !1
     }
 };
-alert("444");
+alert("111");
+console.log(document.cookie);
