@@ -63,5 +63,13 @@ var $area,
         url_program_day: "",
         url_program_detail: "",
         radiru_twitter_timeline: ""
-    }
+    },
+    callback = function () {
+        $("#areaOpen").on("click", function () {
+            clearTimeout(t),
+            $("#selectArea ul").slideToggle("fast")
+        }).html(findAreaJP($area)),
+        $("#selectArea ul ." + $area).addClass("this");
+        var t = "";
+    },    
 ;    
