@@ -9,7 +9,7 @@ var $d = document.domain.indexOf("stg-") > -1 || document.domain.indexOf("dev-")
   , nowDate = new Date;
 $(function() {
     $.ajax({
-        url: "/radio/config/config_web.xml",
+        url: "config/config_web.xml",
         cache: !0,
         dataType: "xml",
         success: function(e) {
