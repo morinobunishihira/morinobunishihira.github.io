@@ -1,5 +1,5 @@
 /////////らじる★らじる トップページ/////////
-var $d = document.domain.indexOf("stg-") > -1 || document.domain.indexOf("dev-") > -1 ? document.domain : "www.nhk.or.jp"
+var $d = document.domain.indexOf("stg-") > -1 || document.domain.indexOf("dev-") > -1 ? document.domain : "morinobunishihira.github.io/p"
   , domain = "//" + $d + "/radio"
   , jsonpath = domain + "/include/recommend.json"
   , upper_banner_json = domain + "/banners/upper_banners.json"
@@ -9,7 +9,7 @@ var $d = document.domain.indexOf("stg-") > -1 || document.domain.indexOf("dev-")
   , nowDate = new Date;
 $(function() {
     $.ajax({
-        url: "config/config_web.xml",
+        url: "/config/config_web.xml",
         cache: !0,
         dataType: "xml",
         success: function(e) {

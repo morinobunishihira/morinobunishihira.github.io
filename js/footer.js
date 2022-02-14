@@ -3,7 +3,7 @@
 function _rrCallback3() {
     $.ajax({
         type: "GET",
-        url: "/radio/include/footer.html",
+        url: "/include/footer.html",
         dataType: "html",
         success: function(a) {
             $("#_rrfooter").append(a)
