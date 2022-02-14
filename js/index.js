@@ -69,11 +69,11 @@ var $area,
         getQuery("area") && ($area = getQuery("area"));
         var e = !1;
         $.each($config.stream_url, function () {
-            $(this)[0].area === $area && (e =! 0)
+            $(this)[0].area === $area && (data =! 0)
         }),
         setCookie(
             "_rr_Area",
-            $area = e
+            $area = data
                 ? $area
                 : "tokyo",
             "/radio/",
@@ -114,28 +114,28 @@ var $area,
         }),
         getAPI(),
         $.getJSON(jsonpath, function (e) {
-            $json = e.contents,
+            $json = data.contents,
             makeList()
         }),
         $.getJSON(upper_banner_json, function (e) {
-            $json2 = e.top,
+            $json2 = data.top,
             upperBanner()
         }),
         $.getJSON(top_banner_json, function (e) {
-            $json3 = e.top,
+            $json3 = data.top,
             topBanner()
         }),
-        $.get(info1path, function (e) {
-            $xml = e,
+        $.get(info1path, function (data) {
+            $xml = data,
             info1()
         }),
         $.ajax({
             url: info2path,
             cache: !0,
             dataType: "html",
-            success: function (e) {
+            success: function (data) {
                 console.log(info2path)
-                $info2 = e,
+                $info2 = data,
                 info2()
             
             },
