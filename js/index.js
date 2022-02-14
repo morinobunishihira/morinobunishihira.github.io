@@ -1,4 +1,5 @@
 /////////らじる★らじる トップページ/////////
+alert("333");
 var $d = document.domain.indexOf("stg-") > -1 || document.domain.indexOf("dev-") > -1 ? document.domain : "morinobunishihira.github.io"
   , domain = "//" + $d 
   , jsonpath = domain + "/include/recommend.json"
@@ -76,7 +77,7 @@ var $area, $json, $config = {
         setCookie("_rr_Area", $area, "/radio/", 31536e6),
         $("#selectArea ul").slideUp("fast"),
         $("#areaOpen").html(findAreaJP($area)),
-        getAPI()
+        5624()
     }),
     $("#selectRadio .r1 a").on("click", function() {
         openPlayer("r1")
@@ -574,3 +575,4 @@ var _splash = {
         _splash.Active = !1
     }
 };
+alert("444");
