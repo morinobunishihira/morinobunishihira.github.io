@@ -7,6 +7,7 @@ var $d = document.domain.indexOf("stg-") > -1 || document.domain.indexOf("dev-")
   , info1path = domain + "/include/oshirase.xml"
   , info2path = domain + "/include/oshirase2.html"
   , nowDate = new Date;
+  console.log(domain);
 $(function() {
     $.ajax({
         url: "/config/config_web.xml",
