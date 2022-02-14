@@ -1,5 +1,5 @@
 /////////らじる★らじる トップページ/////////
-var $d = document.domain.indexOf("stg-") > -1 || document.domain.indexOf("dev-") > -1 ? document.domain : "morinobunishihira.github.io/p"
+var $d = document.domain.indexOf("stg-") > -1 || document.domain.indexOf("dev-") > -1 ? document.domain : "morinobunishihira.github.io"
   , domain = "//" + $d + "/radio"
   , jsonpath = domain + "/include/recommend.json"
   , upper_banner_json = domain + "/banners/upper_banners.json"
