@@ -115,7 +115,32 @@ a { color:#262626; text-decoration:none; -webkit-transition:all 0.2s; transition
 		position:absolute; top:0; left:0; z-index:2;
 	}
 
-
+/*selectArea*/
+.idx #selectArea { width:115px; top:100px; left:50%; margin-left:-57px;}
+	.idx #areaOpen {
+		display:block; width:100%; height:27px; line-height:24px;
+		font-size:140%; font-weight:bold; text-align:center; color:#262626;
+		border:1px solid #b2b3bf; border-radius:5px;
+		background:#fff; cursor:pointer;
+		padding:1px 10px 0 0; position:relative;
+	}
+	.idx #areaOpen:after {
+		content:''; display:block; width:0; height:0;
+		position:absolute; top:50%; right:8px; z-index:20;
+		border:6px transparent solid;
+		border-top-color:#df1825;
+		border-width:9px 6px 0 6px;
+		margin-top:-4px;
+	}
+	.idx #selectArea ul {
+		width:100%; top:28px; overflow:hidden;
+		border:1px solid #b2b3bf; border-radius:5px;
+	}
+	.idx #selectArea ul li { border-color:#f1f1f1;}
+	.idx #selectArea ul li:first-child { border-top:none;}
+	.idx #selectArea ul li a { font-size:140%; height:28px; line-height:28px;}
+	.idx #selectArea ul li a:hover,
+	.idx #selectArea ul li.this a { background:#f1f1f1;}
 
 
 
