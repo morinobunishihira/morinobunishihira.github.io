@@ -28,19 +28,19 @@ $(function() {
                     fmhls: $(this).find("fmhls").text()
                 })
             }),
-            $config.url_program_noa = $(e)
+            $config.url_program_noa = $(data)
                 .find("url_program_noa")
                 .eq(0)
                 .text(),
-            $config.url_program_day = $(e)
+            $config.url_program_day = $(data)
                 .find("url_program_day")
                 .eq(0)
                 .text(),
-            $config.url_program_detail = $(e)
+            $config.url_program_detail = $(data)
                 .find("url_program_detail")
                 .eq(0)
                 .text(),
-            $config.radiru_twitter_timeline = $(e)
+            $config.radiru_twitter_timeline = $(data)
                 .find("radiru_twitter_timeline")
                 .eq(0)
                 .text(),
