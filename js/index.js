@@ -65,11 +65,95 @@ var $area,
         radiru_twitter_timeline: ""
     },
     callback = function () {
+        getCookie("_rr_Area") && "false" != getCookie("_rr_Area") && ($area = getCookie("_rr_Area")),
+        getQuery("area") && ($area = getQuery("area"));
+        var e = !1;
+        $.each($config.stream_url, function () {
+            $(this)[0].area === $area && (e =! 0)
+        }),
+        setCookie(
+            "_rr_Area",
+            $area = e
+                ? $area
+                : "tokyo",
+            "/radio/",
+            31536e6
+        ),
         $("#areaOpen").on("click", function () {
             clearTimeout(t),
             $("#selectArea ul").slideToggle("fast")
         }).html(findAreaJP($area)),
         $("#selectArea ul ." + $area).addClass("this");
         var t = "";
-    },    
+        $("#selectArea ul,#areaOpen").mouseover(function () {
+            clearTimeout(t)
+        }),
+        $("#selectArea ul,#areaOpen").mouseout(function () {
+            clearTimeout(t),
+            t = setTimeout(function () {
+                $("#selectArea ul").hide()
+            }, 250)
+        }),
+        $("#selectArea ul a").on("click", function () {
+            $("#selectArea ul li").removeClass("this"),
+            $area = $(this).parent("li").attr("class"),
+            $(this).parent("li").addClass("this"),
+            setCookie("_rr_Area", $area, "/radio/", 31536e6),
+            $("#selectArea ul").slideUp("fast"),
+            $("#areaOpen").html(findAreaJP($area)),
+            getAPI()
+        }),
+        $("#selectRadio .r1 a").on("click", function () {
+            openPlayer("r1")
+        }),
+        $("#selectRadio .r2 a").on("click", function () {
+            openPlayer("r2")
+        }),
+        $("#selectRadio .fm a").on("click", function () {
+            openPlayer("fm")
+        }),
+        getAPI(),
+        $.getJSON(jsonpath, function (e) {
+            $json = e.contents,
+            makeList()
+        }),
+        $.getJSON(upper_banner_json, function (e) {
+            $json2 = e.top,
+            upperBanner()
+        }),
+        $.getJSON(top_banner_json, function (e) {
+            $json3 = e.top,
+            topBanner()
+        }),
+        $.get(info1path, function (e) {
+            $xml = e,
+            info1()
+        }),
+        $.ajax({
+            url: info2path,
+            cache: !0,
+            dataType: "html",
+            success: function (e) {
+                console.log(info2path)
+                $info2 = e,
+                info2()
+            
+            },
+            error: function () {
+                console.log("err");
+            }
+            
+        }),
+        
+        setTimeout(function () {
+            $(".loader").fadeOut("fast")
+        }, 3e3)
+    },
+    reload_timeout = "",
+    $NOAjson = [],
+    $images = {
+        r1: "",
+        r2: "",
+        fm: ""
+    };   
 ;    
