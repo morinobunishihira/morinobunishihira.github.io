@@ -64,3 +64,4 @@ var $area,
         url_program_detail: "",
         radiru_twitter_timeline: ""
     },
+;    
