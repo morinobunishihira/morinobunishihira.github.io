@@ -69,6 +69,8 @@ $(window).on("orientationchange resize", function() {
     setBodyClass()
 });
 var ieVer, ua = {};
+console.log(window.navigator);
+console.log(window.navigator.userAgent);
 ua.name = window.navigator.userAgent.toLowerCase(),
 ua.isOldEdge = ua.name.indexOf("applewebkit") >= 0 && ua.name.indexOf("edge/") >= 0,
 ua.isNewEdge = ua.name.indexOf("applewebkit") >= 0 && ua.name.indexOf("edg/") >= 0,

@@ -577,5 +577,5 @@ var _splash = {
         _splash.Active = !1
     }
 };
-alert("444");
+alert("555");
 console.log(document.cookie);
