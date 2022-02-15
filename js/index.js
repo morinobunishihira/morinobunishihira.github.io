@@ -465,6 +465,8 @@ function getCookie(e) {
     return !1
 }
 function setCookie(e, t, a, n) {
+    console.log("navigator.cookieEnabled");
+    console.log(navigator.cookieEnabled);
     if (!1 === navigator.cookieEnabled)
         return !1;
     var i = new Date;
@@ -577,5 +579,5 @@ var _splash = {
         _splash.Active = !1
     }
 };
-alert("555");
+alert("666");
 console.log(document.cookie);
