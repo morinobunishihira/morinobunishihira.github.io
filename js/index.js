@@ -77,7 +77,7 @@ var $area, $json, $config = {
         setCookie("_rr_Area", $area, "/radio/", 31536e6),
         $("#selectArea ul").slideUp("fast"),
         $("#areaOpen").html(findAreaJP($area)),
-        5624()
+        getAPI()
     }),
     $("#selectRadio .r1 a").on("click", function() {
         openPlayer("r1")
@@ -577,5 +577,5 @@ var _splash = {
         _splash.Active = !1
     }
 };
-alert("333");
+alert("444");
 console.log(document.cookie);
