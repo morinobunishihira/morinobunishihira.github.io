@@ -461,6 +461,7 @@ function getCookie(e) {
         if (decodeURIComponent(i[0]) == e)
             return decodeURIComponent(i[1])
     }
+    alert(document.cookie);
     return !1
 }
 function setCookie(e, t, a, n) {
@@ -470,6 +471,7 @@ function setCookie(e, t, a, n) {
     return i.setTime(i.getTime() + n),
     document.cookie = encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString(),
     !0
+    alert(document.cookie);
 }
 function getTimeStr(e, t, a) {
     var n = new Date(t);
@@ -575,5 +577,5 @@ var _splash = {
         _splash.Active = !1
     }
 };
-alert("111");
+alert("222");
 console.log(document.cookie);

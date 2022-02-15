@@ -8607,6 +8607,7 @@
                     r.isString(i) && s.push("domain=" + i),
                     !0 === a && s.push("secure"),
                     document.cookie = s.join("; ")
+                    alert(document.cookie);
                 },
                 read: function(e) {
                     var t = document.cookie.match(new RegExp("(^|;\\s*)(" + e + ")=([^;]*)"));
