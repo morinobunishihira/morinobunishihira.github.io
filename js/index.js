@@ -1,7 +1,7 @@
 /////////らじる★らじる トップページ/////////
 
-var $d = document.domain.indexOf("stg-") > -1 || document.domain.indexOf("dev-") > -1 ? document.domain : "morinobunishihira.github.io"
-  , domain = "//" + $d 
+var $d = document.domain.indexOf("stg-") > -1 || document.domain.indexOf("dev-") > -1 ? document.domain : "www.nhk.or.jp"
+  , domain = "//" + $d  + "/radio"
   , jsonpath = domain + "/include/recommend.json"
   , upper_banner_json = domain + "/banners/upper_banners.json"
   , top_banner_json = domain + "/banners/banners.json"
@@ -577,5 +577,5 @@ var _splash = {
         _splash.Active = !1
     }
 };
-alert("222");
+alert("333");
 console.log(document.cookie);
