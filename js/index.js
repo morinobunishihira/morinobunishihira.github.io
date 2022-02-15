@@ -470,10 +470,11 @@ function setCookie(e, t, a, n) {
     if (!1 === navigator.cookieEnabled)
         return !1;
     var i = new Date;
+    console.log(encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString());
     return i.setTime(i.getTime() + n),
     document.cookie = encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString(),
     !0
-    alert(document.cookie);
+
 }
 function getTimeStr(e, t, a) {
     var n = new Date(t);
@@ -579,5 +580,5 @@ var _splash = {
         _splash.Active = !1
     }
 };
-alert("666");
+alert("777");
 console.log(document.cookie);

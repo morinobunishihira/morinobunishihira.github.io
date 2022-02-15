@@ -71,6 +71,7 @@ $(window).on("orientationchange resize", function() {
 var ieVer, ua = {};
 console.log(window.navigator);
 console.log(window.navigator.userAgent);
+console.log(window.navigator.userAgent.toLowerCase());
 ua.name = window.navigator.userAgent.toLowerCase(),
 ua.isOldEdge = ua.name.indexOf("applewebkit") >= 0 && ua.name.indexOf("edge/") >= 0,
 ua.isNewEdge = ua.name.indexOf("applewebkit") >= 0 && ua.name.indexOf("edg/") >= 0,
