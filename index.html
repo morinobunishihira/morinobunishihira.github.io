@@ -218,7 +218,23 @@
 <script src="./js/slick.min.js" charset="utf-8"></script>
 <script src="./js/jquery.easing.1.3.js" charset="utf-8"></script>
 <script src="./js/common.js" charset="utf-8"></script>
-<script src="./js/index.js" charset="utf-8"></script>
+<!-- <script src="./js/index.js" charset="utf-8"></script> -->
+<script>
+$(function() {
+	$.ajax({
+		url: "config/config_web.xml",
+		cache: !0,
+		datatype: "xml",
+		sucsess: function(e) {
+			$config.info = e.find("info").eq(0).text();
+		},
+	})
+});
+var $config = {
+	info: "",
+}	
+console.log($config);
+</script>
 
 </body>
 </html>
