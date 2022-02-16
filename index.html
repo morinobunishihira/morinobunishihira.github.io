@@ -252,23 +252,20 @@ var $area,$config = {
 	info: "",
 	stream_url: [],
 }, callback = function() {
-	alert("callback5");
-	console.log(getCookie("_rr_Area"));
-	console.log("false" != getCookie("_rr_Area"));
-	console.log(($area = getCookie("_rr_Area")));
-	console.log(getQuery("area"));
-	console.log(($area = getQuery("area")));
+	alert("callback6");
+
 	getCookie("_rr_Area") && "false" != getCookie("_rr_Area") && ($area = getCookie("_rr_Area")),
     getQuery("area") && ($area = getQuery("area"));
     var e = !1;
     $.each($config.stream_url, function() {
         $(this)[0].area === $area && (e = !0)
-    });
-    setCookie("_rr_Area", $area = e ? $area : "tokyo", "/radio/", 31536e6);
+    }),
+	console.log(e);
+    setCookie("_rr_Area", $area = e ? $area : "tokyo", "/radio/", 31536e6),
 	$("#areaOpen").on("click", function() {
         clearTimeout(t),
         $("#selectArea ul").slideToggle("fast")
-    }).html(findAreaJP($area));
+    }).html(findAreaJP($area)),
 	$("#selectArea ul ." + $area).addClass("this");
 }
 function findAreaJP(e) {
