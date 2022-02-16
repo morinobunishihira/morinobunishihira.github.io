@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-bbb
+aaa
 	<!-- <img src="https://www.nhk.or.jp/radio/include/footer.html" alt=""> -->
 	<!-- <img src="https://www.nhk.or.jp/radio/img/alt_images/r2.png" alt=""> -->
 <!--NHK Header-->
@@ -222,94 +222,18 @@ bbb
 <script>
 $(function() {
 	$.ajax({
-		
 		url: "config/config_web.xml",
 		cache: !0,
 		datatype: "xml",
 		success: function(e) {
-			alert("sr");
 			$config.info = $(e).find("info").eq(0).text();
-			$(e).find("stream_url data").each(function() {
-				$config.stream_url.push({
-					areajp: $(this).find("areajp").text(),
-					area: $(this).find("area").text(),
-					apkey: $(this).find("apkey").text(),
-					areakey: $(this).find("areakey").text(),
-					r1hls: $(this).find("r1hls").text(),
-					r2hls: $(this).find("r2hls").text(),
-					fmhls: $(this).find("fmhls").text(),			
-				})
-			})
-			callback();
-		},
-		error: function() {
-			alert("error");
+			console.log($config.info);
 		}
-
 	})
-});
-var $area,$config = {
-	info: "",
-	stream_url: [],
-}, callback = function() {
-	alert("callback6");
-
-	getCookie("_rr_Area") && "false" != getCookie("_rr_Area") && ($area = getCookie("_rr_Area")),
-    getQuery("area") && ($area = getQuery("area"));
-    var e = !1;
-    $.each($config.stream_url, function() {
-        $(this)[0].area === $area && (e = !0)
-    }),
-	console.log(e);
-    setCookie("_rr_Area", $area = e ? $area : "tokyo", "/radio/", 31536e6),
-	$("#areaOpen").on("click", function() {
-        // clearTimeout(t),
-        $("#selectArea ul").slideToggle("fast")
-    }).html(findAreaJP($area)),
-	$("#selectArea ul ." + $area).addClass("this");
-}
-function findAreaJP(e) {
-    var t;
-    return $.each($config.stream_url, function(a) {
-        $(this)[0].area == e && (t = $(this)[0].areajp)
-    }),
-    t
-}
-function getQuery(e) {
-    var t = String(window.location.search).replace(/(.)(.+?)/, "$2");
-    if ("" === e)
-        return t;
-    _A = t.split("&");
-    for (var a = 0, n = _A.length; n > a; a++) {
-        var i = _A[a].split("=");
-        if (2 === i.length && i[0] === e)
-            return i[1]
-    }
-    return !1
-}
-function getCookie(e) {
-    if (!1 === navigator.cookieEnabled)
-        return !1;
-    for (var t = String(document.cookie).replace(/\s+/g, "").split(";"), a = 0, n = t.length; n > a; a++) {
-        var i = t[a].split("=");
-        if (decodeURIComponent(i[0]) == e)
-            return decodeURIComponent(i[1])
-    }
-    alert(document.cookie); //style=null
-    return !1
-}
-function setCookie(e, t, a, n) {
-
-    if (!1 === navigator.cookieEnabled)
-        return !1;
-    var i = new Date;
-    console.log(encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString());
-    return i.setTime(i.getTime() + n),
-    document.cookie = encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString(),
-    !0
-
-}
-console.log($config);
+	var $config = {
+		info: ""
+	};
+})
 </script>
 
 </body>
