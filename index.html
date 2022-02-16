@@ -263,7 +263,7 @@ var $area,$config = {
 	console.log(e);
     setCookie("_rr_Area", $area = e ? $area : "tokyo", "/radio/", 31536e6),
 	$("#areaOpen").on("click", function() {
-        clearTimeout(t),
+        // clearTimeout(t),
         $("#selectArea ul").slideToggle("fast")
     }).html(findAreaJP($area)),
 	$("#selectArea ul ." + $area).addClass("this");
@@ -299,8 +299,7 @@ function getCookie(e) {
     return !1
 }
 function setCookie(e, t, a, n) {
-    console.log("navigator.cookieEnabled");
-    console.log(navigator.cookieEnabled);
+
     if (!1 === navigator.cookieEnabled)
         return !1;
     var i = new Date;
