@@ -257,6 +257,7 @@ var $config = {
         clearTimeout(t),
         $("#selectArea ul").slideToggle("fast")
     }).html(findAreaJP($area)),
+	$("#selectArea ul ." + $area).addClass("this");
 }
 console.log($config);
 </script>
