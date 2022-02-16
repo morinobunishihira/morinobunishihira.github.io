@@ -273,6 +273,41 @@ function findAreaJP(e) {
     }),
     t
 }
+function getQuery(e) {
+    var t = String(window.location.search).replace(/(.)(.+?)/, "$2");
+    if ("" === e)
+        return t;
+    _A = t.split("&");
+    for (var a = 0, n = _A.length; n > a; a++) {
+        var i = _A[a].split("=");
+        if (2 === i.length && i[0] === e)
+            return i[1]
+    }
+    return !1
+}
+function getCookie(e) {
+    if (!1 === navigator.cookieEnabled)
+        return !1;
+    for (var t = String(document.cookie).replace(/\s+/g, "").split(";"), a = 0, n = t.length; n > a; a++) {
+        var i = t[a].split("=");
+        if (decodeURIComponent(i[0]) == e)
+            return decodeURIComponent(i[1])
+    }
+    alert(document.cookie); //style=null
+    return !1
+}
+function setCookie(e, t, a, n) {
+    console.log("navigator.cookieEnabled");
+    console.log(navigator.cookieEnabled);
+    if (!1 === navigator.cookieEnabled)
+        return !1;
+    var i = new Date;
+    console.log(encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString());
+    return i.setTime(i.getTime() + n),
+    document.cookie = encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString(),
+    !0
+
+}
 console.log($config);
 </script>
 
