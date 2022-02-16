@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-
+aaa
 	<!-- <img src="https://www.nhk.or.jp/radio/include/footer.html" alt=""> -->
 	<!-- <img src="https://www.nhk.or.jp/radio/img/alt_images/r2.png" alt=""> -->
 <!--NHK Header-->
@@ -222,10 +222,12 @@
 <script>
 $(function() {
 	$.ajax({
+		
 		url: "config/config_web.xml",
 		cache: !0,
 		datatype: "xml",
-		sucsess: function(e) {
+		success: function(e) {
+			alert("sr");
 			$config.info = e.find("info").eq(0).text();
 		},
 		error: function() {
