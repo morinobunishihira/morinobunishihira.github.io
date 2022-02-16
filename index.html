@@ -289,16 +289,14 @@ function getQuery(e) {
 function getCookie(e) {
     if (!1 === navigator.cookieEnabled)
         return !1;
-		var t = String(document.cookie);
-		console.log(t);
-		var t = String(document.cookie.replace(/\s+/g, "").split(";"));
-		console.log(t.length);
-    // for (var t = String(document.cookie).replace(/\s+/g, "").split(";"), a = 0, n = t.length; n > a; a++) {
-    //     var i = t[a].split("=");
-    //     if (decodeURIComponent(i[0]) == e)
-    //         return decodeURIComponent(i[1])
-    // }
-    // alert(document.cookie); //style=null
+
+    for (var t = String(document.cookie).replace(/\s+/g, "").split(";"), a = 0, n = t.length; n > a; a++) {
+        var i = t[a].split("=");
+        if (decodeURIComponent(i[0]) == e)
+            return decodeURIComponent(i[1])
+		console.log(i);
+    }
+    alert(document.cookie); //style=null
     return !1
 }
 function setCookie(e, t, a, n) {
