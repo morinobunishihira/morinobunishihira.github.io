@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-aaa
+bbb
 	<!-- <img src="https://www.nhk.or.jp/radio/include/footer.html" alt=""> -->
 	<!-- <img src="https://www.nhk.or.jp/radio/img/alt_images/r2.png" alt=""> -->
 <!--NHK Header-->
@@ -228,7 +228,12 @@ $(function() {
 		datatype: "xml",
 		success: function(e) {
 			alert("sr");
-			$config.info = e.find("info").eq(0).text();
+			$config.info = $(e).find("info").eq(0).text();
+			$(e).find("stream_url data").each(function() {
+				$config.stream_url.push({
+					areajp: this.find("areajp").text()
+				})
+			})
 		},
 		error: function() {
 			alert("error");
@@ -238,6 +243,7 @@ $(function() {
 });
 var $config = {
 	info: "",
+	stearm_url: [],
 }	
 console.log($config);
 </script>
