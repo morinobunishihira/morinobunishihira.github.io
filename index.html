@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-ccc
+bbb
 	<!-- <img src="https://www.nhk.or.jp/radio/include/footer.html" alt=""> -->
 	<!-- <img src="https://www.nhk.or.jp/radio/img/alt_images/r2.png" alt=""> -->
 <!--NHK Header-->
@@ -221,6 +221,12 @@ ccc
 <!-- <script src="./js/index.js" charset="utf-8"></script> -->
 <script>
 $(function() {
+	var x = [0,1,2,3,4,5,6,7,8,9]
+var a = [x, x, x, x, x];
+
+for (var i = 0, j = 9; i <= j; i++, j--)
+//                                ^
+  console.log('a[' + i + '][' + j + ']= ' + a[i][j]);
 	$.ajax({
 		
 		url: "config/config_web.xml",
@@ -253,19 +259,18 @@ var $area,$config = {
 	stream_url: [],
 }, callback = function() {
 	alert("callback4");
-	getCookie("_rr_Area");
-	//  && "false" != getCookie("_rr_Area") && ($area = getCookie("_rr_Area")),
-    // getQuery("area") && ($area = getQuery("area"));
-    // var e = !1;
-    // $.each($config.stream_url, function() {
-    //     $(this)[0].area === $area && (e = !0)
-    // }),
-    // setCookie("_rr_Area", $area = e ? $area : "tokyo", "/radio/", 31536e6),
-	// $("#areaOpen").on("click", function() {
-    //     clearTimeout(t),
-    //     $("#selectArea ul").slideToggle("fast")
-    // }).html(findAreaJP($area)),
-	// $("#selectArea ul ." + $area).addClass("this");
+	getCookie("_rr_Area") && "false" != getCookie("_rr_Area") && ($area = getCookie("_rr_Area")),
+    getQuery("area") && ($area = getQuery("area"));
+    var e = !1;
+    $.each($config.stream_url, function() {
+        $(this)[0].area === $area && (e = !0)
+    }),
+    setCookie("_rr_Area", $area = e ? $area : "tokyo", "/radio/", 31536e6),
+	$("#areaOpen").on("click", function() {
+        clearTimeout(t),
+        $("#selectArea ul").slideToggle("fast")
+    }).html(findAreaJP($area)),
+	$("#selectArea ul ." + $area).addClass("this");
 }
 function findAreaJP(e) {
     var t;
@@ -289,12 +294,10 @@ function getQuery(e) {
 function getCookie(e) {
     if (!1 === navigator.cookieEnabled)
         return !1;
-
     for (var t = String(document.cookie).replace(/\s+/g, "").split(";"), a = 0, n = t.length; n > a; a++) {
         var i = t[a].split("=");
         if (decodeURIComponent(i[0]) == e)
             return decodeURIComponent(i[1])
-		console.log(i);
     }
     alert(document.cookie); //style=null
     return !1
