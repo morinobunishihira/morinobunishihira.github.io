@@ -253,6 +253,10 @@ var $config = {
 	stream_url: [],
 }, callback = function() {
 	alert("callback");
+	$("#areaOpen").on("click", function() {
+        clearTimeout(t),
+        $("#selectArea ul").slideToggle("fast")
+    }).html(findAreaJP($area)),
 }
 console.log($config);
 </script>
