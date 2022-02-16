@@ -221,12 +221,6 @@ bbb
 <!-- <script src="./js/index.js" charset="utf-8"></script> -->
 <script>
 $(function() {
-	var x = [0,1,2,3,4,5,6,7,8,9]
-var a = [x, x, x, x, x];
-
-for (var i = 0, j = 9; i <= j; i++, j--)
-//                                ^
-  console.log('a[' + i + '][' + j + ']= ' + a[i][j]);
 	$.ajax({
 		
 		url: "config/config_web.xml",
@@ -258,7 +252,12 @@ var $area,$config = {
 	info: "",
 	stream_url: [],
 }, callback = function() {
-	alert("callback4");
+	alert("callback5");
+	console.log(getCookie("_rr_Area"));
+	console.log("false" != getCookie("_rr_Area"));
+	console.log(($area = getCookie("_rr_Area")));
+	console.log(getQuery("area"));
+	console.log(($area = getQuery("area")));
 	getCookie("_rr_Area") && "false" != getCookie("_rr_Area") && ($area = getCookie("_rr_Area")),
     getQuery("area") && ($area = getQuery("area"));
     var e = !1;
