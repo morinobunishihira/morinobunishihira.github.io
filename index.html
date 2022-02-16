@@ -228,6 +228,10 @@ $(function() {
 		sucsess: function(e) {
 			$config.info = e.find("info").eq(0).text();
 		},
+		error: function() {
+			alert("error");
+		}
+
 	})
 });
 var $config = {
