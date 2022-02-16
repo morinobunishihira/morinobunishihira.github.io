@@ -291,6 +291,8 @@ function getCookie(e) {
         return !1;
 		var t = String(document.cookie);
 		console.log(t);
+		var t = String(document.cookie.replace(/\s+/g, "").split(";"));
+		console.log(t);
     // for (var t = String(document.cookie).replace(/\s+/g, "").split(";"), a = 0, n = t.length; n > a; a++) {
     //     var i = t[a].split("=");
     //     if (decodeURIComponent(i[0]) == e)
