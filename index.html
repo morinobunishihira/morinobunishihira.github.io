@@ -270,9 +270,10 @@ $(function() {
 			return !1;
 		var i = new Date;
 		console.log(encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString());
-		return i.setTime(i.getTime() + n),
-		document.cookie = encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString(),
-		!0
+		 i.setTime(i.getTime() + n),
+		document.cookie = encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString();
+console.log(document.cookie);
+		return	!0;
 
 	}
 })
