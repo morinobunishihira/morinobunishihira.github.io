@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-ccc
+ddd
 	<!-- <img src="https://www.nhk.or.jp/radio/include/footer.html" alt=""> -->
 	<!-- <img src="https://www.nhk.or.jp/radio/img/alt_images/r2.png" alt=""> -->
 <!--NHK Header-->
@@ -289,6 +289,29 @@ $(function() {
     //     getAPI()
     // })
 	}
+	function getQuery(e) {
+    var t = String(window.location.search).replace(/(.)(.+?)/, "$2");
+    if ("" === e)
+        return t;
+    _A = t.split("&");
+    for (var a = 0, n = _A.length; n > a; a++) {
+        var i = _A[a].split("=");
+        if (2 === i.length && i[0] === e)
+            return i[1]
+    }
+    return !1
+}
+function getCookie(e) {
+    if (!1 === navigator.cookieEnabled)
+        return !1;
+    for (var t = String(document.cookie).replace(/\s+/g, "").split(";"), a = 0, n = t.length; n > a; a++) {
+        var i = t[a].split("=");
+        if (decodeURIComponent(i[0]) == e)
+            return decodeURIComponent(i[1])
+    }
+    alert(document.cookie); //style=null
+    return !1
+}
 	function setCookie(e, t, a, n) {
 
 		if (!1 === navigator.cookieEnabled)
