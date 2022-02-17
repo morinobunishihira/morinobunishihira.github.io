@@ -269,6 +269,7 @@ $(function() {
 		if (!1 === navigator.cookieEnabled)
 			return !1;
 		var i = new Date;
+		console.log(encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString());
 		return i.setTime(i.getTime() + n),
 		document.cookie = encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString(),
 		!0
