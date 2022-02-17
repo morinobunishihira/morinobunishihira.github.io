@@ -27,9 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-ddd
-	<!-- <img src="https://www.nhk.or.jp/radio/include/footer.html" alt=""> -->
-	<!-- <img src="https://www.nhk.or.jp/radio/img/alt_images/r2.png" alt=""> -->
+eee
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -222,7 +220,7 @@ ddd
 <script>
 $(function() {
 	$.ajax({
-		url: "https://www.nhk.or.jp/radio/config/config_web.xml",
+		url: "https://www.nhk.or.jp/config/config_web.xml",
 		cache: !0,
 		datatype: "xml",
 		success: function(e) {
@@ -243,7 +241,7 @@ $(function() {
 			$config.url_program_day = $(e).find("url_program_day").text();
 			$config.url_program_detail = $(e).find("url_program_detail").text();
 			$config.radiru_twitter_timeline = $(e).find("radiru_twitter_timeline").text();
-			console.log($config);
+
 			callback()
 		}
 	})
@@ -256,7 +254,7 @@ $(function() {
 		url_program_detail: "",
 		radiru_twitter_timeline: "",
 	}, callback = function() {
-		console.log("callback");
+
 		getCookie("_rr_Area") && "false" != getCookie("_rr_Area") && ($area = getCookie("_rr_Area")),
     getQuery("area") && ($area = getQuery("area"));
     var e = !1;
