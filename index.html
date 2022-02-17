@@ -317,7 +317,7 @@ function setCookie(e, t, a, n) {
         return !1;
     var i = new Date;
     console.log(encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString());
-	document.cookie = "name=value; expires=Thu, 21 Mar 2019 12:00:00 GMT";
+	document.cookie = "name=value expires=Thu, 21 Mar 2019 12:00:00 GMT;";
 	console.log(document.cookie);
 	return  !0
     // document.cookie = encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString(),
