@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-aaa
+bbb
 	<!-- <img src="https://www.nhk.or.jp/radio/include/footer.html" alt=""> -->
 	<!-- <img src="https://www.nhk.or.jp/radio/img/alt_images/r2.png" alt=""> -->
 <!--NHK Header-->
@@ -270,6 +270,7 @@ $(function() {
 			return !1;
 		var i = new Date;
 		document.cookie = "";
+		console.log(document.cookie);
 		i.setTime(i.getTime() + n),
 		document.cookie = encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString();
 		console.log(document.cookie);
