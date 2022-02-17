@@ -244,6 +244,7 @@ $(function() {
 			$config.url_program_detail = $(e).find("url_program_detail").text();
 			$config.radiru_twitter_timeline = $(e).find("radiru_twitter_timeline").text();
 			console.log($config);
+			callback()
 		}
 	})
 	var $config = {
@@ -252,8 +253,10 @@ $(function() {
 		url_program_noa: "",
 		url_program_day: "",
 		url_program_detail: "",
-		radiru_twitter_timelin: "",
-	};
+		radiru_twitter_timeline: "",
+	}, callback = function() {
+		console.log("callback");
+	}
 })
 </script>
 
