@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-eee
+fff
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -310,24 +310,18 @@ function getCookie(e) {
     alert(document.cookie); //style=null
     return !1
 }
-	function setCookie(e, t, a, n) {
+function setCookie(e, t, a, n) {
+    console.log("navigator.cookieEnabled");
+    console.log(navigator.cookieEnabled);
+    if (!1 === navigator.cookieEnabled)
+        return !1;
+    var i = new Date;
+    console.log(encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString());
+    return i.setTime(i.getTime() + n),
+    document.cookie = encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString(),
+    !0
 
-		if (!1 === navigator.cookieEnabled)
-			return !1;
-		var i = new Date;
-		document.cookie = "";
-		console.log(document.cookie);
-		i.setTime(i.getTime() + n),
-		// document.cookie = 'name=Tanaka';
-		document.cookie = encodeURIComponent(e) + "=" + encodeURIComponent(t) + ";";
-		document.cookie = "path=" + a + ";";
-		document.cookie = "expires=" + i.toUTCString();
-		// document.cookie = encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString();
-		console.log(document.cookie);
-		console.log(encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString());
-		return	!0;
-
-	}
+}
 	function findAreaJP(e) {
     var t;
     return $.each($config.stream_url, function(a) {
