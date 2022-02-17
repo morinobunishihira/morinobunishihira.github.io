@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-bbb
+ccc
 	<!-- <img src="https://www.nhk.or.jp/radio/include/footer.html" alt=""> -->
 	<!-- <img src="https://www.nhk.or.jp/radio/img/alt_images/r2.png" alt=""> -->
 <!--NHK Header-->
@@ -257,12 +257,37 @@ $(function() {
 		radiru_twitter_timeline: "",
 	}, callback = function() {
 		console.log("callback");
-		var e = !1;
-		$.each($config.stream_url, function() {
-			$(this)[0].area === $area && (e = !0)
-		}),
-    	ggg = setCookie("_rr_Area", $area = e ? $area : "tokyo", "/radio/", 31536e6);
-		console.log(document.cookie);
+		getCookie("_rr_Area") && "false" != getCookie("_rr_Area") && ($area = getCookie("_rr_Area")),
+    getQuery("area") && ($area = getQuery("area"));
+    var e = !1;
+    $.each($config.stream_url, function() {
+        $(this)[0].area === $area && (e = !0)
+    }),
+    setCookie("_rr_Area", $area = e ? $area : "tokyo", "/radio/", 31536e6),
+    $("#areaOpen").on("click", function() {
+        clearTimeout(t),
+        $("#selectArea ul").slideToggle("fast")
+    }).html(findAreaJP($area)),
+    $("#selectArea ul ." + $area).addClass("this");
+    var t = "";
+    $("#selectArea ul,#areaOpen").mouseover(function() {
+        clearTimeout(t)
+    }),
+    $("#selectArea ul,#areaOpen").mouseout(function() {
+        clearTimeout(t),
+        t = setTimeout(function() {
+            $("#selectArea ul").hide()
+        }, 250)
+    })
+    // $("#selectArea ul a").on("click", function() {
+    //     $("#selectArea ul li").removeClass("this"),
+    //     $area = $(this).parent("li").attr("class"),
+    //     $(this).parent("li").addClass("this"),
+    //     setCookie("_rr_Area", $area, "/radio/", 31536e6),
+    //     $("#selectArea ul").slideUp("fast"),
+    //     $("#areaOpen").html(findAreaJP($area)),
+    //     getAPI()
+    // })
 	}
 	function setCookie(e, t, a, n) {
 
