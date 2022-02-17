@@ -228,10 +228,19 @@ $(function() {
 		success: function(e) {
 			$config.info = $(e).find("info").eq(0).text();
 			console.log($config.info);
+			console.log($(e).find("info").text());
+			$(e).find("stream_url data").each(function() {
+				$config.stream_url.push({
+					areajp: $(this).find("areajp").text(),
+					area: $(this).find("area").text(),
+				})
+			})
+			console.log($config.stream_url);
 		}
 	})
 	var $config = {
-		info: ""
+		info: "",
+		stream_url: [],
 	};
 })
 </script>
