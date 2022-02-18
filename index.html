@@ -220,14 +220,20 @@ aaa
 
 <script>
 $(function() {
-	$.ajax({
-		url: "config.config_web.xml",
-		cache: !0,
-		dataType: "xml",
-		success: function() {
-			alert("success");
-		}
-	})
+
+$.ajax({
+	url: "config/config_web.xml",
+	cache: !0,
+	dataType: "xml",
+	success: function(e) {
+		alert("success");
+		$config.info = $(e).find("info").text();
+		console.log($config);
+	}
+})
+var $config = {
+	info: "",
+}
 
 })
 </script>
