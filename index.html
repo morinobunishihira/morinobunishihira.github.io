@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-eee
+fff
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -323,6 +323,16 @@ function setCookie(e, t, a, n) {
     document.cookie = encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString(),
 	!0
 
+}
+function txt(e) {
+    return null == e ? "" : (e = e.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(e) {
+        return String.fromCharCode(e.charCodeAt(0) - 65248)
+    })).replace(/　/g, " ").replace(/：/g, ":").replace(/／/g, "/").replace(/．/g, ".").replace(/－/g, "-").replace(/ +/g, " ").replace(/^ +/g, "").replace(/ +$/g, "").replace(/</g, "＜").replace(/>/g, "＞").replace(/，/g, ", ").replace(/､/g, "、").replace(/｢/g, "「").replace(/｣/g, "」").replace(/･/g, "・").replace(/  /g, " ").replace(/\n/g, "<br>")
+}
+function htmltxt(e) {
+    return null == e ? "" : (e = e.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(e) {
+        return String.fromCharCode(e.charCodeAt(0) - 65248)
+    })).replace(/　/g, " ").replace(/：/g, ":").replace(/／/g, "/").replace(/．/g, ".").replace(/－/g, "-").replace(/ +/g, " ").replace(/^ +/g, "").replace(/ +$/g, "").replace(/，/g, ", ").replace(/､/g, "、").replace(/｢/g, "「").replace(/｣/g, "」").replace(/･/g, "・").replace(/  /g, " ").replace(/\n/g, "<br>")
 }
 	function findAreaJP(e) {
     var t;
