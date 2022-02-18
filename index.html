@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-ccc
+ddd
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -286,7 +286,11 @@ $(function() {
         $("#areaOpen").html(findAreaJP($area)),
         getAPI()
     })
-	}
+	}, reload_timeout = "", $NOAjson = [], $images = {
+    r1: "",
+    r2: "",
+    fm: ""
+};
 	function getQuery(e) {
     var t = String(window.location.search).replace(/(.)(.+?)/, "$2");
     if ("" === e)
