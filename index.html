@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-aaa
+bbb
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -227,12 +227,19 @@ $.ajax({
 	dataType: "xml",
 	success: function(e) {
 		alert("success");
-		$config.info = $(e).find("info").text();
+		$config.info = $(e).find("info").text(),
+		$(e).find("stream_url data").each(function() {
+			$config.stream_url.push({
+				areajp: $(this).find("areajp").text(),
+
+			})
+		})
 		console.log($config);
 	}
 })
 var $config = {
 	info: "",
+	stream_url: [],
 }
 
 })
