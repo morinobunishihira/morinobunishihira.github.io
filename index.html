@@ -261,7 +261,7 @@ var $area,$config = {
     $.each($config.stream_url, function() {
         $(this)[0].area === $area && (e = !0)
     }),
-    setCookie("_rr_Area", $area = e ? $area : "tokyo", "/", 31536e6),
+    setCookie("_rr_Area", $area = e ? $area : "tokyo", "/", 31536e6);
 }
 function getCookie(e) {
 	if(navigator.cookieEnabled === false) return false;
