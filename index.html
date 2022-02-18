@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-ddd
+eee
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -480,6 +480,39 @@ function wopen(e) {
 void 0 === window.console && (window.console = {
     log: function() {}
 });
+function dispMeta() {
+    if ($("#selectRadio .r1 .title p").text(txt($NOAjson.r1.title)),
+    $("#selectRadio .r1 .time").html(""),
+    $NOAjson.r1.start_time) {
+        var e = new Date($NOAjson.r1.start_time.split("+")[0].split("-").join("/").replace(/T/, " ")).getTime()
+          , t = new Date($NOAjson.r1.end_time.split("+")[0].split("-").join("/").replace(/T/, " ")).getTime();
+        $("#selectRadio .r1 .c-time").html("<span>" + getTimeStr(12, e, "AMPM") + "</span>" + getTimeStr(12, e, "H:II") + "<span>-</span>" + getTimeStr(12, t, "H:II"))
+    }
+    if ($("#selectRadio .r1 .picinner").css({
+        "background-image": "url(" + $images.r1.replace(/http:\/\//, "//").replace(/https:\/\//, "//") + ")"
+    }),
+    $("#selectRadio .r2 .title p").text(txt($NOAjson.r2.title)),
+    $("#selectRadio .r2 .time").html(""),
+    $NOAjson.r2.start_time) {
+        e = new Date($NOAjson.r2.start_time.split("+")[0].split("-").join("/").replace(/T/, " ")).getTime(),
+        t = new Date($NOAjson.r2.end_time.split("+")[0].split("-").join("/").replace(/T/, " ")).getTime();
+        $("#selectRadio .r2 .c-time").html("<span>" + getTimeStr(12, e, "AMPM") + "</span>" + getTimeStr(12, e, "H:II") + "<span>-</span>" + getTimeStr(12, t, "H:II"))
+    }
+    if ($("#selectRadio .r2 .picinner").css({
+        "background-image": "url(" + $images.r2.replace(/http:\/\//, "//").replace(/https:\/\//, "//") + ")"
+    }),
+    $("#selectRadio .fm .title p").text(txt($NOAjson.fm.title)),
+    $("#selectRadio .fm .time").html(""),
+    $NOAjson.fm.start_time) {
+        e = new Date($NOAjson.fm.start_time.split("+")[0].split("-").join("/").replace(/T/, " ")).getTime(),
+        t = new Date($NOAjson.fm.end_time.split("+")[0].split("-").join("/").replace(/T/, " ")).getTime();
+        $("#selectRadio .fm .c-time").html("<span>" + getTimeStr(12, e, "AMPM") + "</span>" + getTimeStr(12, e, "H:II") + "<span>-</span>" + getTimeStr(12, t, "H:II"))
+    }
+    $("#selectRadio .fm .picinner").css({
+        "background-image": "url(" + $images.fm.replace(/http:\/\//, "//").replace(/https:\/\//, "//") + ")"
+    }),
+    $("#nowOnair .loader").delay(700).fadeOut(200)
+}
 })
 </script>
 
