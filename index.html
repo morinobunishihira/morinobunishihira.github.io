@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-ccc
+ddd
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -259,7 +259,8 @@ var $config = {
 	getCookie("_rr_Area");
 }
 function getCookie(e) {
-	console.log(navigator);
+	if(navigator.cookieEnabled === false) return false;
+	alert("true");
 }
 })
 </script>
