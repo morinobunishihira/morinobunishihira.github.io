@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-bbb
+ccc
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -453,6 +453,29 @@ function getAPI() {
         error: function() {}
     })
 }
+function findAreakey(e) {
+    var t;
+    return $.each($config.stream_url, function(a) {
+        $(this)[0].area == e && (t = $(this)[0].areakey)
+    }),
+    t
+}
+function findAreaJP(e) {
+    var t;
+    return $.each($config.stream_url, function(a) {
+        $(this)[0].area == e && (t = $(this)[0].areajp)
+    }),
+    t
+}
+function openPlayer(e) {
+    ua.isiOS || ua.isAndroid ? location.href = "./player/?ch=" + e : wopen("./player/?ch=" + e)
+}
+function wopen(e) {
+    window.open(e, "rr", "width=360,height=810,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no").focus()
+}
+void 0 === window.console && (window.console = {
+    log: function() {}
+});
 })
 </script>
 
