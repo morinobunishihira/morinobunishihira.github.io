@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-fff
+ggg
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -323,6 +323,41 @@ function setCookie(e, t, a, n) {
     document.cookie = encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString(),
 	!0
 
+}
+function getTimeStr(e, t, a) {
+    var n = new Date(t);
+    a = (a = a.split("YYYY").join(n.getFullYear())).split("YOBI").join(["日", "月", "火", "水", "木", "金", "土"][n.getDay()]);
+    var i = n.getMonth() + 1
+      , r = n.getDate()
+      , s = n.getHours()
+      , l = n.getMinutes()
+      , o = n.getSeconds();
+    12 == e ? s >= 12 ? (a = a.split("AMPM").join("午後"),
+    s -= 12) : a = a.split("AMPM").join("午前") : a = a.split("AMPM").join("");
+    var c = i
+      , m = r
+      , p = s
+      , $ = l
+      , d = o;
+    return 10 > c && (c = "0" + c),
+    10 > m && (m = "0" + m),
+    10 > p && (p = "0" + p),
+    10 > $ && ($ = "0" + $),
+    10 > d && (d = "0" + d),
+    (a = (a = (a = (a = (a = (a = (a = (a = (a = a.split("MM").join(c)).split("DD").join(m)).split("HH").join(p)).split("II").join($)).split("SS").join(d)).split("M").join(i)).split("D").join(r)).split("H").join(s)).split("I").join(l)).split("S").join(o)
+}
+var exchgCh = {
+    r1: "n1",
+    r2: "n2",
+    fm: "n3"
+}
+  , exchgCh2 = {
+    r1: "ラジオ第1",
+    r2: "ラジオ第2",
+    fm: "NHK-FM"
+};
+function removehtmltag(e) {
+    return e.replace(/<("[^"]*"|'[^']*'|[^'">])*>/g, "")
 }
 function txt(e) {
     return null == e ? "" : (e = e.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(e) {
