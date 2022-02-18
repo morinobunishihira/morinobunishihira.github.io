@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-hhh
+aaa
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -277,15 +277,15 @@ $(function() {
             $("#selectArea ul").hide()
         }, 250)
     })
-    // $("#selectArea ul a").on("click", function() {
-    //     $("#selectArea ul li").removeClass("this"),
-    //     $area = $(this).parent("li").attr("class"),
-    //     $(this).parent("li").addClass("this"),
-    //     setCookie("_rr_Area", $area, "/radio/", 31536e6),
-    //     $("#selectArea ul").slideUp("fast"),
-    //     $("#areaOpen").html(findAreaJP($area)),
-    //     getAPI()
-    // })
+    $("#selectArea ul a").on("click", function() {
+        $("#selectArea ul li").removeClass("this"),
+        $area = $(this).parent("li").attr("class"),
+        $(this).parent("li").addClass("this"),
+        setCookie("_rr_Area", $area, "/radio/", 31536e6),
+        $("#selectArea ul").slideUp("fast"),
+        $("#areaOpen").html(findAreaJP($area)),
+        getAPI()
+    })
 	}
 	function getQuery(e) {
     var t = String(window.location.search).replace(/(.)(.+?)/, "$2");
@@ -307,21 +307,17 @@ function getCookie(e) {
         if (decodeURIComponent(i[0]) == e)
             return decodeURIComponent(i[1])
     }
-    alert(document.cookie); //style=null
+
     return !1
 }
 function setCookie(e, t, a, n) {
-    console.log("navigator.cookieEnabled");
-    console.log(navigator.cookieEnabled);
+
     if (!1 === navigator.cookieEnabled)
         return !1;
     var i = new Date;
-    i.setTime(i.getTime() + n);
-    document.cookie = encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString();
-	console.log(i);
-    console.log(encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString());
-	console.log(document.cookie);
-	return !0
+    return i.setTime(i.getTime() + n),
+    document.cookie = encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString(),
+	!0
 
 }
 	function findAreaJP(e) {
