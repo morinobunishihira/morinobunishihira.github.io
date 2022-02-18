@@ -262,8 +262,8 @@ function getCookie(e) {
 	if(navigator.cookieEnabled === false) return false;
 	var t = "a; b  c   de".replace(/\s+/,"").split(";");
 	var u = "a; b  c;   de".replace(/\s/,"").split(";");
-	alert(t);
-	alert(u);
+	alert(t[0]);
+	alert(u[1]);
 }
 })
 </script>
