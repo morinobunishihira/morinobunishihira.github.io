@@ -250,15 +250,17 @@ $.ajax({
 var $config = {
 	info: "",
 	stream_url: [],
-	url_program_noa,
+	url_program_noa: "",
 	url_program_day: "",
     url_program_detail: "",
     radiru_twitter_timeline: ""
 },callback = function() {
 
-	alert("callback");
+	getCookie("_rr_Area");
 }
-
+function getCookie(e) {
+	console.log(navigator);
+}
 })
 </script>
 
