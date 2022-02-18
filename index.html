@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-ddd
+eee
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -316,7 +316,7 @@ function setCookie(e, t, a, n) {
     if (!1 === navigator.cookieEnabled)
         return !1;
     var i = new Date;
-    i.setTime(i.getTime() + 1000);
+    i.setTime(i.getTime() + 10000);
     document.cookie = encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString();
 	
     console.log(encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString());
