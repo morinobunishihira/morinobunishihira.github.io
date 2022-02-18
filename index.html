@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-bbb
+ccc
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -231,15 +231,32 @@ $.ajax({
 		$(e).find("stream_url data").each(function() {
 			$config.stream_url.push({
 				areajp: $(this).find("areajp").text(),
-
+				area: $(this).find("area").text(),
+				apikey: $(this).find("apikey").text(),
+				areakey: $(this).find("areakey").text(),
+				r1hls: $(this).find("r1hls").text(),
+				r2hls: $(this).find("r2hls").text(),
+				fmhls: $(this).find("fmhls").text()
 			})
 		})
+		$config.url_program_noa = $(e).find("url_program_noa").text(),
+		$config.url_program_day = $(e).find("url_program_day").text(),
+		$config.url_program_detail = $(e).find("url_program_detail").text(),
+		$config.radiru_twitter_timeline = $(e).find("radiru_twitter_timeline").text(),
 		console.log($config);
+		callback();
 	}
 })
 var $config = {
 	info: "",
 	stream_url: [],
+	url_program_noa,
+	url_program_day: "",
+    url_program_detail: "",
+    radiru_twitter_timeline: ""
+},callback = function() {
+
+	alert("callback");
 }
 
 })
