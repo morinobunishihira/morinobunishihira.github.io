@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-aaa
+bbb
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -326,6 +326,132 @@ function setCookie(e, t, a, n) {
         $(this)[0].area == e && (t = $(this)[0].areajp)
     }),
     t
+}
+function getAPI() {
+    $.ajax({
+        url: $config.url_program_noa.replace(/{area}/, findAreakey($area)),
+        cache: !0,
+        dataType: "json",
+        success: function(e) {
+            ($NOAjson = {
+                r1: !1,
+                r2: !1,
+                fm: !1
+            }).r1 = e.nowonair_list.n1.present,
+            $NOAjson.r2 = e.nowonair_list.n2.present,
+            $NOAjson.fm = e.nowonair_list.n3.present,
+            $NOAjson.r1.title || ($NOAjson.r1 = {
+                act: "",
+                ch: "",
+                content: "",
+                start_time: !1,
+                end_time: !1,
+                free: "",
+                hashtag: "",
+                index: 0,
+                link: "",
+                music: "",
+                programid: "",
+                rebroad: "",
+                sozaitani: "",
+                station: "",
+                subtitle: "",
+                title: "（ただいま放送はありません）",
+                url_goods: ""
+            }),
+            $NOAjson.r2.title || ($NOAjson.r2 = {
+                act: "",
+                ch: "",
+                content: "",
+                start_time: !1,
+                end_time: !1,
+                free: "",
+                hashtag: "",
+                index: 0,
+                link: "",
+                music: "",
+                programid: "",
+                rebroad: "",
+                sozaitani: "",
+                station: "",
+                subtitle: "",
+                title: "（ただいま放送はありません）",
+                url_goods: ""
+            }),
+            $NOAjson.fm.title || ($NOAjson.fm = {
+                act: "",
+                ch: "",
+                content: "",
+                start_time: !1,
+                end_time: !1,
+                free: "",
+                hashtag: "",
+                index: 0,
+                link: "",
+                music: "",
+                programid: "",
+                rebroad: "",
+                sozaitani: "",
+                station: "",
+                subtitle: "",
+                title: "（ただいま放送はありません）",
+                url_goods: ""
+            });
+            var t = 1e17
+              , a = {
+                r1: !1,
+                r2: !1,
+                fm: !1
+            };
+            if ($NOAjson.r1.start_time)
+                try {
+                    a.r1 = new Date($NOAjson.r1.end_time.split("+")[0].split("-").join("/").replace(/T/, " ")).getTime() - (new Date).getTime()
+                } catch (e) {
+                    a.r1 = !1
+                }
+            if ($NOAjson.r2.start_time)
+                try {
+                    a.r2 = new Date($NOAjson.r2.end_time.split("+")[0].split("-").join("/").replace(/T/, " ")).getTime() - (new Date).getTime()
+                } catch (e) {
+                    a.r2 = !1
+                }
+            if ($NOAjson.fm.start_time)
+                try {
+                    a.fm = new Date($NOAjson.fm.end_time.split("+")[0].split("-").join("/").replace(/T/, " ")).getTime() - (new Date).getTime()
+                } catch (e) {
+                    a.fm = !1
+                }
+            if ($NOAjson.r1.end_time,
+            $NOAjson.r2.end_time,
+            $NOAjson.fm.end_time,
+            a.r1 && a.r1 < t && (t = a.r1),
+            a.r2 && a.r2 < t && (t = a.r2),
+            a.fm && a.fm < t && (t = a.fm),
+            1e17 == t || ((t += 1e3 * (Math.floor(60 * Math.random()) + 1)) <= 0 && (t = 1e4),
+            window.clearTimeout(reload_timeout),
+            reload_timeout = window.setTimeout(getAPI, t)),
+            $NOAjson.r1)
+                try {
+                    $images.r1 = $NOAjson.r1.images.thumbnail_m.url
+                } catch (e) {
+                    $images.r1 = "/radio/img/alt_images/r1.png"
+                }
+            if ($NOAjson.r2)
+                try {
+                    $images.r2 = $NOAjson.r2.images.thumbnail_m.url
+                } catch (e) {
+                    $images.r2 = "/radio/img/alt_images/r2.png"
+                }
+            if ($NOAjson.fm)
+                try {
+                    $images.fm = $NOAjson.fm.images.thumbnail_m.url
+                } catch (e) {
+                    $images.fm = "/radio/img/alt_images/fm.png"
+                }
+            dispMeta()
+        },
+        error: function() {}
+    })
 }
 })
 </script>
