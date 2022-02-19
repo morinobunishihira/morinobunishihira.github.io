@@ -266,8 +266,15 @@ var $area,$config = {
 }
 function getCookie(e) {
 	if(navigator.cookieEnabled === false) return false;
-	var v = String(document.cookie).replace(/\s+/,"").split(";");
-	console.log(v.length);
+    for (var t = String(document.cookie).replace(/\s+/g, "").split(";"), a = 0, n = t.length; n > a; a++) {
+        var i = t[a].split("=");
+        if (decodeURIComponent(i[0]) == e) {
+console.log(decodeURIComponent(i[1]));
+            return decodeURIComponent(i[1])
+		} 
+    }
+    alert(document.cookie); //style=null
+    return !1
 
 }
 function setCookie(e, t, a, n) {
