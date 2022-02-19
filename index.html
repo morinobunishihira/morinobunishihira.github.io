@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-fff
+ggg
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -255,14 +255,29 @@ var $area,$config = {
     url_program_detail: "",
     radiru_twitter_timeline: ""
 },callback = function() {
-
-	getCookie("_rr_Area");
+    getCookie("_rr_Area") && "false" != getCookie("_rr_Area") && ($area = getCookie("_rr_Area")),
+    getQuery("area") && ($area = getQuery("area"));
+console.log($erea);
 	var e = !1;
     $.each($config.stream_url, function() {
         $(this)[0].area === $area && (e = !0)
     }),
     setCookie("_rr_Area", $area = e ? $area : "tokyo", "/", 31536e6);
     setCookie("_oo_Area", $area = e ? $area : "osaka", "/", 31536e6);
+}
+function getQuery(e) {
+	console.log(window.location);
+	console.log(window.location.search);
+    var t = String(window.location.search).replace(/(.)(.+?)/, "$2");
+    if ("" === e)
+        return t;
+    _A = t.split("&");
+    for (var a = 0, n = _A.length; n > a; a++) {
+        var i = _A[a].split("=");
+        if (2 === i.length && i[0] === e)
+            return i[1]
+    }
+    return !1
 }
 function getCookie(e) {
 	if(navigator.cookieEnabled === false) return false;
