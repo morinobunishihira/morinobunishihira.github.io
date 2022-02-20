@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-aaa
+bbb
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -267,8 +267,8 @@ console.log($area);
 }
 function getQuery(e) {
 	console.log(window.location.search);
-	console.log(document.location.search);
     var t = String(window.location.search).replace(/(.)(.+?)/, "$2");
+	console.log(t);
     if ("" === e)
         return t;
     _A = t.split("&");
