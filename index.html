@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-hhh
+aaa
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -266,8 +266,8 @@ console.log($area);
     setCookie("_oo_Area", $area = e ? $area : "osaka", "/", 31536e6);
 }
 function getQuery(e) {
-	console.log(window.location);
-	console.log(document.location);
+	console.log(window.location.search);
+	console.log(document.location.search);
     var t = String(window.location.search).replace(/(.)(.+?)/, "$2");
     if ("" === e)
         return t;
