@@ -267,7 +267,7 @@ console.log($area);
 }
 function getQuery(e) {
 	console.log(window.location);
-	console.log(String(window.location.search));
+	console.log(document.location);
     var t = String(window.location.search).replace(/(.)(.+?)/, "$2");
     if ("" === e)
         return t;
