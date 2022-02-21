@@ -220,6 +220,11 @@ aaa
 
 <script>
 $(function() {
+var $config = {
+	info: "",
+
+}
+$(function() {
 	$.ajax({
 		url: "config/config_web.xml",
 		chache: !0,
@@ -229,10 +234,9 @@ $(function() {
 			console.log($config.info);
 		}
 	}),
-	var $config {
-		info: "",
 
-	}
+})	
+
 })
 </script>
 
