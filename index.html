@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-ddd
+eee
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -257,20 +257,20 @@ var $area,$config = {
 },callback = function() {
     getCookie("_rr_Area") && "false" != getCookie("_rr_Area") && ($area = getCookie("_rr_Area")),
     getQuery("area") && ($area = getQuery("area"));
-console.log($area);
+
+// https://morinobunishihira.github.io/?p=0685_01&area=fukuoka queryがこれなら
 	var e = !1;
     $.each($config.stream_url, function() {
         $(this)[0].area === $area && (e = !0)
     }),
-	console.log($area);
-	console.log(e);
+
     setCookie("_rr_Area", $area = e ? $area : "tokyo", "/", 31536e6);
 
 }
 function getQuery(e) {
-	console.log(window.location.search);
+
     var t = String(window.location.search).replace(/(.)(.+?)/, "$2");
-	console.log(t);
+
     if ("" === e)
         return t;
     _A = t.split("&");
@@ -283,14 +283,15 @@ function getQuery(e) {
 }
 function getCookie(e) {
 	if(navigator.cookieEnabled === false) return false;
+	console.log(document.cookie);
     for (var t = String(document.cookie).replace(/\s+/g, "").split(";"), a = 0, n = t.length; n > a; a++) {
         var i = t[a].split("=");
         if (decodeURIComponent(i[0]) == e) {
-console.log(decodeURIComponent(i[1]));
+
             return decodeURIComponent(i[1])
 		} 
     }
-    alert(document.cookie); //style=null
+
     return !1
 
 }
