@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-bbb
+ddd
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -262,8 +262,10 @@ console.log($area);
     $.each($config.stream_url, function() {
         $(this)[0].area === $area && (e = !0)
     }),
+	console.log($area);
+	console.log(e);
     setCookie("_rr_Area", $area = e ? $area : "tokyo", "/", 31536e6);
-    setCookie("_oo_Area", $area = e ? $area : "osaka", "/", 31536e6);
+
 }
 function getQuery(e) {
 	console.log(window.location.search);
