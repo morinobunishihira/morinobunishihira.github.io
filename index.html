@@ -221,7 +221,7 @@ fff
 <script>
 $(function() {
 
-var $config = {
+var $area,$config = {
 	info: "",
 	stream_url: [],
 	url_program_noa: "",
@@ -257,7 +257,7 @@ $(function() {
 
 		}
 	}),callback = function() {
-		console.log(getCookie("_rr_Area"));
+		$area = getCookie("_rr_Area"),$area = getQuery("area");
 
 	}
 
@@ -271,7 +271,11 @@ function getCookie(e) {
 		w= v[i].split("=");
 		if(w[0] === e) return w[1];
 	}
-
+	return !1;
+}
+function getQuery(e) {
+	console.log(window.location);
+	console.log(window.location.search);
 }
 
 })
