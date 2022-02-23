@@ -295,10 +295,10 @@ function getQuery(e) {
 	if("" === e)
 		return t;
 	_A = t.split("&");
-console.log(_A);
+// console.log(_A);
 	for(let a = 0; a < _A.length; a++) {
 		let i = _A[a].split("=");
-		console.log(i);
+		// console.log(i);
 		if(i.length === 2 && i[0] === e)
 			return i[1]
 	}
