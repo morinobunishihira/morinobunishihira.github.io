@@ -266,6 +266,8 @@ function getCookie(area) {
 	if(!1 === navigator.cookieEnabled) 
 		return !1;
 	console.log(document.cookie);
+	var v = document.cookie.split(";")
+	console.log(v);
 }
 
 })
