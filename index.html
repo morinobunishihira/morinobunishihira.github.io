@@ -274,8 +274,8 @@ function getCookie(e) {
 	return !1;
 }
 function getQuery(e) {
-	console.log(window.location);
-	console.log(window.location.search);
+	var v = window.location.search.replace(/(.)(.+?)/,"$2");
+	console.log(v);
 }
 
 })
