@@ -266,7 +266,7 @@ function getCookie(area) {
 	if(!1 === navigator.cookieEnabled) 
 		return !1;
 	console.log(document.cookie);
-	var v = document.cookie.split(";")
+	var v = document.cookie.replace(/\s*/g,"").split(";")
 	console.log(v);
 }
 
