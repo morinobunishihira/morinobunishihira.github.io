@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-ddd
+eee
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -246,16 +246,20 @@ $(function() {
 					r1hls: $(this).find("r1hls").text(),
 					r2hls: $(this).find("r2hls").text(),
 					fmhls: $(this).find("fmhls").text(),
-
+					
 				})
 			})
 			$config.url_program_noa = $(e).find("url_program_noa").text();
 			$config.url_program_day = $(e).find("url_program_day").text();
 			$config.url_program_detail = $(e).find("url_program_detail").text();
 			$config.radiru_twitter_timeline = $(e).find("radiru_twitter_timeline").text();
-			console.log($config);
+			callback();
+
 		}
-	});
+	}),callback = function() {
+		console.log(callback);
+	}
+
 })	
 
 })
