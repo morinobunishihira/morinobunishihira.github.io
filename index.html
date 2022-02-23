@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-aaa
+bbb
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -270,7 +270,7 @@ $(function() {
 function getCookie(e) {
 	if(!1 === navigator.cookieEnabled) 
 		return !1;
-	console.log(document.cookie);
+	// console.log(document.cookie);
 	var v = document.cookie.replace(/\s*/g,"").split(";");
 	for(i = 0; i < v.length; i++) {
 		w= v[i].split("=");
@@ -280,7 +280,7 @@ function getCookie(e) {
 }
 function getQuery(e) {
 	var v = window.location.search.replace(/(.)(.+?)/,"$2");
-	console.log(v);
+	// console.log(v);
 	if(e === "") return v;
 }
 
