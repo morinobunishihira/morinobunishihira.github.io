@@ -285,7 +285,7 @@ function getQuery(e) {
 	_A = t.split("&");
 
 	for(let a = 0; a < _A.length; a++) {
-		let i = _A.split("=");
+		let i = _A[a].split("=");
 		if(i.length === 2 && i[0] === e)
 			return i[1]
 	}
