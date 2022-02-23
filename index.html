@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-hhh
+aaa
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -269,6 +269,7 @@ $(function() {
 		console.log($area);
 		var e = !1;
 		$.each($config.stream_url, function() {
+			console.log($(this));
 			console.log($(this)[0]);
         	$(this)[0].area === $area && (e = !0)
     	}),
