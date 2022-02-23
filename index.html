@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-ccc
+ddd
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -224,6 +224,10 @@ $(function() {
 var $config = {
 	info: "",
 	stream_url: [],
+	url_program_noa: "",
+    url_program_day: "",
+    url_program_detail: "",
+    radiru_twitter_timeline: ""
 }
 $(function() {
 	$.ajax({
@@ -245,6 +249,10 @@ $(function() {
 
 				})
 			})
+			$config.url_program_noa = $(e).find("url_program_noa").text();
+			$config.url_program_day = $(e).find("url_program_day").text();
+			$config.url_program_detail = $(e).find("url_program_detail").text();
+			$config.radiru_twitter_timeline = $(e).find("radiru_twitter_timeline").text();
 			console.log($config);
 		}
 	});
