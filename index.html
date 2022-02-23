@@ -279,18 +279,30 @@ function getCookie(e) {
 	return !1;
 }
 function getQuery(e) {
-	var t = window.location.search.replace(/(.)(.+?)/,"$2");
-	if("" === e)
-		return t;
-	_A = t.split("&");
-
-	for(let a = 0; a < _A.length; a++) {
-		let i = _A[a].split("=");
-		if(i.length === 2 && i[0] === e)
-			return i[1]
-	}
-	return !1;
+    var t = String(window.location.search).replace(/(.)(.+?)/, "$2");
+    if ("" === e)
+        return t;
+    _A = t.split("&");
+    for (var a = 0, n = _A.length; n > a; a++) {
+        var i = _A[a].split("=");
+        if (2 === i.length && i[0] === e)
+            return i[1]
+    }
+    return !1
 }
+// function getQuery(e) {
+// 	var t = window.location.search.replace(/(.)(.+?)/,"$2");
+// 	if("" === e)
+// 		return t;
+// 	_A = t.split("&");
+
+// 	for(let a = 0; a < _A.length; a++) {
+// 		let i = _A[a].split("=");
+// 		if(i.length === 2 && i[0] === e)
+// 			return i[1]
+// 	}
+// 	return !1;
+// }
 
 })
 </script>
