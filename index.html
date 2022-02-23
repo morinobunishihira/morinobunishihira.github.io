@@ -267,6 +267,7 @@ $(function() {
 		getCookie("_rr_Area") && "false" != getCookie("_rr_Area") && ($area = getCookie("_rr_Area")),
     	getQuery("area") && ($area = getQuery("area"));
 		console.log($area);
+		var e = !1;
 		$.each($config.stream_url, function() {
 			console.log($(this).area);
         	$(this).area === $area && (e = !0)
