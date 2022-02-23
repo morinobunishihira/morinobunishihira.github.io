@@ -257,17 +257,21 @@ $(function() {
 
 		}
 	}),callback = function() {
-		getCookie("_rr_Area");
+		console.log(getCookie("_rr_Area"));
 
 	}
 
 })	
-function getCookie(area) {
+function getCookie(e) {
 	if(!1 === navigator.cookieEnabled) 
 		return !1;
 	console.log(document.cookie);
-	var v = document.cookie.replace(/\s*/g,"").split(";")
-	console.log(v);
+	var v = document.cookie.replace(/\s*/g,"").split(";");
+	for(i = 0; i < v.length; i++) {
+		w= v[i].split("=");
+		if(w[0] === e) return w[1];
+	}
+
 }
 
 })
