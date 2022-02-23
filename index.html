@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-aaa
+bbb
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -230,10 +230,15 @@ $(function() {
 		cache: !0,
 		dataType: "xml",
 		success: function(e) {
+			$config.info = $(e).find("info").text();
 			console.log("success");
 		}
-	})
-
+	});
+	
+	var $config = {
+		info: "",
+	}
+	
 })	
 
 })
