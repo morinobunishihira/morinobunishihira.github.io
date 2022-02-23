@@ -279,9 +279,11 @@ function getCookie(e) {
 	return !1;
 }
 function getQuery(e) {
-	var v = window.location.search.replace(/(.)(.+?)/,"$2");
-	console.log(e);
-	return v;
+	var t = window.location.search.replace(/(.)(.+?)/,"$2");
+	if("" === e)
+		return t;
+	_A = t.split("&");
+	console.log(_A);
 }
 
 })
