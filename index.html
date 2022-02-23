@@ -227,11 +227,10 @@ var $config = {
 $(function() {
 	$.ajax({
 		url: "config/config_web.xml",
-		chache: !0,
+		cache: !0,
 		dataType: "xml",
 		success: function(e) {
-			$config.info = $(e).find("info").text();
-			console.log($config.info);
+			console.log("success");
 		}
 	})
 
