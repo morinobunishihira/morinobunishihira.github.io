@@ -283,7 +283,13 @@ function getQuery(e) {
 	if("" === e)
 		return t;
 	_A = t.split("&");
-	console.log(_A);
+
+	for(let a = 0; a < _A.length; a++) {
+		let i = _A.split("=");
+		if(i.length === 2 && i[0] === e)
+			return i[1]
+	}
+	]return !1;
 }
 
 })
