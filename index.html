@@ -260,8 +260,8 @@ $(function() {
 		console.log(getCookie("_rr_Area"));
 		console.log("false" != getCookie("_rr_Area"));
 		console.log($area = getCookie("_rr_Area"));
-		console.log(getQuery("area"));
-		console.log($area = getQuery("area"));
+		console.log(getQuery(""));
+		console.log($area = getQuery());
 
 
 	}
@@ -280,8 +280,8 @@ function getCookie(e) {
 }
 function getQuery(e) {
 	var v = window.location.search.replace(/(.)(.+?)/,"$2");
-	// console.log(v);
-	if(e === "") return v;
+	console.log(e);
+	return v;
 }
 
 })
