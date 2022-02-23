@@ -263,7 +263,9 @@ $(function() {
 
 })	
 function getCookie(area) {
-	console.log(navigator);
+	if(!1 === navigator.cookieEnabled) 
+		return !1;
+	console.log(document.cookie);
 }
 
 })
