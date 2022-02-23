@@ -234,9 +234,11 @@ $(function() {
 			$config.info = $(e).find("info").text();
 			console.log($config.info);
 			$(e).find("stream_url data").each(function() {
-				$config.stream_url.push(
-					$(this).find("areajp").text(),
-					$(this).find("area").text(),
+				$config.stream_url.push({
+					areajp: $(this).find("areajp").text(),
+					area: $(this).find("area").text(),
+
+				})
 			})
 		}
 	});
