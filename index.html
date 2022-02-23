@@ -264,8 +264,13 @@ $(function() {
 		console.log($area = getQuery("area"));
 
 		getCookie("_rr_Area") && "false" != getCookie("_rr_Area") && ($area = getCookie("_rr_Area")),
-    getQuery("area") && ($area = getQuery("area"));
+    	getQuery("area") && ($area = getQuery("area"));
 		console.log($area);
+		$.each($config.stream_url, function() {
+			console.log($(this)[0].area);
+        	$(this)[0].area === $area && (e = !0)
+    	}),
+    	setCookie("_rr_Area", $area = e ? $area : "tokyo", "/radio/", 31536e6)
 	}
 
 })	
