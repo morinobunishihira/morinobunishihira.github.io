@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-ccc
+eee
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -272,8 +272,7 @@ $(function() {
 		$('#areaOpen').on('click', function() {
 			// clearTimeout(t),
 			$('#selectArea ul').slideToggle("fast")
-		})
-		// .html(findAreaJP($area));
+		}).html(findAreaJP($area));
 	}
 
 })	
@@ -311,7 +310,13 @@ function setCookie(e, t, a, n) {
     return i.setTime(i.getTime() + n),
     document.cookie = encodeURIComponent(e) + "=" + encodeURIComponent(t) + "; path=" + a + "; expires=" + i.toUTCString(),
     !0
-
+}
+function findAreaJP(e) {
+    var t;
+    return $.each($config.stream_url, function(a) {
+        $(this)[0].area == e && (t = $(this)[0].areajp)
+    }),
+    t
 }
 })
 </script>
