@@ -27,7 +27,7 @@
 </head>
 
 <body id="pagetop" class="idx">
-eee
+fff
 <!--NHK Header-->
 <script>nol_showCmnHeader()</script>
 
@@ -272,7 +272,8 @@ $(function() {
 		$('#areaOpen').on('click', function() {
 			// clearTimeout(t),
 			$('#selectArea ul').slideToggle("fast")
-		}).html(findAreaJP($area));
+		}).html(findAreaJP($area)),
+		$("#selectArea ul ." + $area).addClass("this");
 	}
 
 })	
